@@ -38,13 +38,13 @@ jobs:
         with:
           path: $./client
 
-    deploy:
-        environment:
-          name: github-pages
-        needs: build
-        runs-on: ubuntu-latest
-        name: Deploy
-        steps:
-          - name: Deploy to GitHub Pages
-            id: deployment
-            uses: actions/deploy-pages@v2
+  deploy:
+      environment:
+        name: github-pages
+      needs: build
+      runs-on: ubuntu-latest
+      name: Deploy
+      steps:
+        - name: Deploy to GitHub Pages
+          id: deployment
+          uses: actions/deploy-pages@v2
