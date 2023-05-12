@@ -41,7 +41,7 @@ jobs:
         with:
           path: $./client
 
-     deploy:
+    deploy:
         environment:
           name: github-pages
         needs: build
