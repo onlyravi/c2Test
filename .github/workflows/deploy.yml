@@ -12,6 +12,9 @@ permissions:
 concurrency:
   group: "pages"
   cancel-in-progress: false
+on:
+  push:
+    branches: ["gh-pages"]
 
 env:
   BUILD_PATH: "." # default value when not using subfolders
