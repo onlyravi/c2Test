@@ -104,7 +104,7 @@ class navbar extends HTMLElement {
                         id="background_nav"
                         data-testid="background_nav"
                         class="nav-link"
-                        href="/background"                          
+                        href="background"                          
                       >
                         Background
                       </a>
@@ -114,7 +114,7 @@ class navbar extends HTMLElement {
                         id="gs_nav"
                         data-testid="gs_nav"
                         class="nav-link"
-                        href="/getting-started"                          
+                        href="getting-started"                          
                       >
                         Getting Started
                       </a>
@@ -124,7 +124,7 @@ class navbar extends HTMLElement {
                         id="opioids_nav"
                         data-testid="opiods_nav"
                         class="nav-link"
-                        href="/focus-on-opioids"                          
+                        href="focus-on-opioids"                          
                       >
                         Focus on Opioids
                       </a>
@@ -134,7 +134,7 @@ class navbar extends HTMLElement {
                         id="ce_nav"
                         data-testid="ce_nav"
                         class="nav-link"
-                        href="/community-engagement"                         
+                        href="community-engagement"                         
                       >
                         Community Engagement
                       </a>
@@ -144,7 +144,7 @@ class navbar extends HTMLElement {
                         id="data_nav"
                         data-testid="data_nav"
                         class="nav-link"
-                        href="/data"                          
+                        href="data"                          
                       >Data</a>
                     </li>
                     <li class="nav-item">
@@ -152,7 +152,7 @@ class navbar extends HTMLElement {
                         id="about_nav"
                         data-testID="about_nav"
                         class="nav-link"
-                        href="/about"                          
+                        href="about"                          
                       >About
                         C2HFCC</a>
                     </li>
