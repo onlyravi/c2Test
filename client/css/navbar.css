@@ -1,0 +1,184 @@
+#fcc_header {
+    background: #13428b url("../img/bg-pattern-header.png");
+    height: 76px;
+}
+
+#fcc_header .navbar-logo {
+    background: url("../img/fcc-logo-lg.png") 0 0 no-repeat;
+    width: 175px;
+    height: 38px;
+    display: block;
+}
+
+#fcc_header .navbar-brand {
+    float: left;
+    padding: 15px 15px 15px 0;
+    margin: 0;
+}
+
+#fcc_header .container {
+    padding: 0;
+}
+
+#fcc_header .title-emphasis {
+    font-size: 24px;
+    font-weight: 100;
+    color: #FFF;
+    letter-spacing: 0.4;
+    line-height: 52px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border-left: 1px solid #FFFFFF;
+}
+  
+#fcc_header .title-emphasis sup {
+    font-size: 10px;
+    color: #FFF;
+    letter-spacing: 0.4;
+    top: -14px;
+}
+
+nav-mh ul {
+    list-style: none;
+    height: 100%;
+    padding-left: 1%;
+    width: 100%;
+}
+
+nav li {
+    float: left;
+    margin-right: 20px;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid #005B94;
+}
+
+.nav-item {
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.navbar-nav-mh.mx-auto li {
+    text-decoration: none;
+    border: none;
+    font-weight: 300;
+}
+
+.navbar-nav-mh.mx-auto li a {
+    color: white;
+    text-decoration: none;
+    padding: 0 4px 3px;
+}
+
+.nav-item-mh {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.navbar-nav-mh .active {
+    border-bottom: 5px solid #FEC335;
+}
+
+.navbar-nav-mh {
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 992px) {
+    .navbar-nav-mh {
+        text-align: justify;
+    }
+}
+
+.navbar-nav-mh>li>a {
+    padding: 10px 10px 0 10px !important;
+}
+
+.nav-dropdown-container-mh {
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    height: 150px;
+    box-shadow: 0 7px 6px -6px #9d9d9d;
+    background: white;
+    margin-top: 5px;
+    padding: 20px 80px;
+    font-size: 1.0428571429em;
+    color: #5085DA;
+    overflow: hidden;
+    left: 0;
+    padding-left: 100px;
+}
+
+.nav-dropdown-options-mh {
+    float: left;
+    width: 60%;
+}
+
+.nav-dropdown-text-mh {
+    float: left;
+    width: 40%;
+    line-height: 25px;
+    color: black;
+}
+
+.navbar-logo-mh {
+    background: url("../img/fcc-logo-lg.png") 0 0 no-repeat;
+    width: 175px;
+    height: 38px;
+    display: block;
+}
+
+#nav_bar {
+    background-color: #1F53C5;
+    height: 64px;
+    width: 100vw;
+}
+
+.navbar-secondary-mh {
+    background: #1F53C5;
+    z-index: 1010;
+    font-size: 1.0428571429em;
+}
+
+@media screen and (min-width: 992px) {
+    /* line 355, ../scss/ui-components/_header.scss */
+    .navbar-secondary-mh {
+        position: relative;
+        height: 64px !important;
+    }
+  }
+  
+  @media screen and (max-width: 991px) {
+    /* line 355, ../scss/ui-components/_header.scss */
+    .navbar-secondary-mh {
+      top: 129px;
+    }
+    .navbar-nav-mh {
+      margin: 0;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    /* line 355, ../scss/ui-components/_header.scss */
+    .navbar-secondary-mh {
+        top: 59px;
+    }
+  }
+  
+  @media screen and (max-width: 991px) {
+    /* line 368, ../scss/ui-components/_header.scss */
+    #nav_bar {
+      display: none;
+    }
+  }
+  
+  /* line 374, ../scss/ui-components/_header.scss */
+  
+  .navbar-secondary-mh .tab-content,
+  .navbar-secondary-mh .tab-pane {
+    height: 100%;
+    opacity: 1;
+    margin: 0;
+  }

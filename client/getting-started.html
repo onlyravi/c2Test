@@ -15,19 +15,10 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/vnd.microsoft.icon" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Connect2HealthFCC - Mapping Broadband Health in America 2017</title>
+    <title>Connect2HealthFCC - Mapping Broadband Health in America 2022</title>
     <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700|Lato:500" rel="stylesheet" type="text/css">
     <link href="css/bootstrap.min.css" rel="stylesheet">    
-    <link href="css/jcarousel.responsive.css" rel="stylesheet" />
-    <link href="css/icon-styles.css" rel="stylesheet">
     <link href="css/app-theme.css" rel="stylesheet">
-    <link href="css/jquery-ui.css" rel="stylesheet">
-    <!--<link href="css/font-awesome.min.css" rel="stylesheet" >-->
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" >
-
-    <link rel="stylesheet" href="css/bootstrap-select.min.css" />       
-    <link rel="stylesheet" href="css/jquery-ui.css">
-
 
      <script>
     (function(i, s, o, g, r, a, m) {
@@ -51,7 +42,7 @@
     <div class="page row-offcanvas row-offcanvas-right">
         <header class="site-header">
 <div class="jumpLinks"> <a href="#skiptarget1" class="sr-only focusable">Skip to main content</a> <a href="#skiptarget3" class="sr-only focusable">Skip to footer and contact information</a> </div>
-    <nav role="navigation">
+    <nav role="navigation" aria-label="Main">
         <div class="navbar navbar-default navbar-primary">
             <div class="container">
                 <div class="navbar-header">
@@ -64,14 +55,13 @@
                 <ul aria-hidden="true" id="menu-primary" class="nav navbar-nav nav-offcanvas-right">
                     <li class="active">
                         <a aria-controls="browse-by-category" href="index.html">
-                            <!--<div class="text-prefix">FCC Initiatives</div>-->
                             <strong class="title-emphasis">Connect2Health<sup>FCC</sup></strong>
                         </a>
                     </li>
                 </ul>
                 <div id="app-title">
-                    <h2>Mapping Broadband Health in America 2017</h2>
-                    <h3>Everyone connected... to the people, services and information they need to get well and stay healthy.</h3>
+                    <h2>Mapping Broadband Health in America 2022</h2>
+                    <h3>Everyone connected&hellip; to the people, services and information they need to get well and stay healthy.</h3>
                 </div>
                 <div class="navbar-controls">
                     <a data-toggle-direction="right" data-toggle="offcanvas" class="btn navbar-btn btn-toggle-menu" type="button">
@@ -81,10 +71,10 @@
             </div>
         </div>
 		
-        <div aria-hidden="true" class="navbar-secondary navbar-default yamm nav-offcanvas nav-offcanvas-right">
+        <div class="navbar-secondary navbar-default yamm nav-offcanvas nav-offcanvas-right">
             <div id="menu-secondary" class="tab-content">
                 <div class="container tab-pane active" id="browse-by-category">
-                    <ul class="nav nav-tabs menu-secondary" role="navigation">            
+                    <ul class="nav nav-tabs menu-secondary" role="navigation" aria-label="Secondary">
                         <li class="dropdown dropdown-left yamm-fw">
                             <a href="index.html" class="dropdown-toggle">
                                 <span class="link-title dropdown-link-title">Map</span>
@@ -96,10 +86,15 @@
                             </a>
                         </li>  
                         <li class="dropdown dropdown-left yamm-fw">
-                            <a href="getting-started.html" class="dropdown-toggle active">
+                            <a href="getting-started.html" class="dropdown-toggle active" aria-current="true">
                                 <span class="link-title dropdown-link-title">Getting Started</span>
                             </a>
-                        </li>  
+                        </li>
+                        <li class="dropdown dropdown-left yamm-fw">
+                            <a href="focus-on-opioids.html" class="dropdown-toggle">
+                                <span class="link-title dropdown-link-title">Focus on Opioids</span>
+                            </a>
+                        </li>
                         <li class="dropdown dropdown-left yamm-fw">
                             <a href="community-engagement.html" class="dropdown-toggle">
                                 <span class="link-title dropdown-link-title">Community Engagement</span>
@@ -127,59 +122,95 @@
 <a class="visuallyhidden" id="skiptarget1" tabindex="-1"></a>
         <main class="container">
             <div class="row">
-                <div class="col-xs-12">
-                    <div class="main-content">
+                <p class="col-xs-12">
+                    <p class="main-content">
                     	<h2>Getting Started</h2>
                         <p>
-                            The 2017 release of the <I>Mapping Broadband Health in America</I> tool immediately puts you in the driver’s seat.  This page will help you get started with three simple steps you can follow to begin exploring the map’s features.  In addition, the <a class="external" href="https://www.fcc.gov/sites/default/files/C2HFCC_BroadbandHealthMap_QuickStartTutorial.pdf" target="_blank">Quick Start Tutorial</a> provides more in-depth guidance, including screenshots and step-by-step instructions on how to use the map.  
+                            The 2022 release of the <em>Mapping Broadband Health in America</em> platform immediately puts you in the driver’s seat. This page will help you get started.  It outlines three simple steps you can follow to begin exploring the platform’s features.
                         </p>
-                        <h3 class="h4"><b>STEP 1: Understand the Map Organization</b></h3>
+                        <h3 class="h4 mt-1"><strong>STEP 1: Understand the Map Organization</strong></h3>
                         <p>
-                            <img src="img/map-organization.png" width="379" class="alignleft" alt="Understand the Map Organization" title="Understand the Map Organization" />
-                            The mapping tool is divided into four sections: Overview, Broadband, Health, and Demographics. You can start to engage with the map in any of these sections, but to explore broadband and health data, start with the Broadband or Health tabs.  Each of these tabs allows you to explore the data in different ways. The Demographics section provides additional information on various demographic factors across the country, including rurality, population density, age, unemployment, and education.  
+                            <img src="img/map-organization.png" width="394" class="alignleft" alt="Understand the Map Organization" title="Understand the Map Organization" />
+                            The mapping tool has two main tabs – Opioids and Chronic Disease.  Each of those tabs is subdivided into four sections: Overview, Broadband, Health, and Demographics. You can start to engage with the map from any point, but to explore broadband and health data, start with the Broadband or Health tabs. Then, each of these tabs allows you to explore the data in different ways. The Demographics section provides additional context, including rurality, population density, age, unemployment, and education.
                         </p>
                         <br/>
-                        <h3 class="h4"><b>STEP 2:  Define What Are You Looking For</b></h3>
+                        <h3 class="h4"><strong>STEP 2:  Define What Are You Looking For</strong></h3>
                         <p>
-                            To explore broadband and health, first determine what information you would like to display. Are you curious about the broadband health statistics in your county or surrounding counties? Do you want to learn more about a specific broadband or health measure across various locations?  Or are you looking for connected health gaps or areas of opportunity?
+                            Choose a general area to intersect with broadband connectivity, either Opioids or Chronic Disease.
+                        </p>
+                        <p>
+                            Then, determine what information you would like to display. Are you curious about the broadband health statistics in your county or surrounding counties? Do you want to learn more about a specific broadband or health measure across various locations? Or are you looking for connected health gaps or areas of opportunity?
                         </p>
                         <img src="img/definition-flow.png" width="650" class="alignright" alt="Definition of the flow" title="Definition of the flow" />
                         <p>
-                            <I><strong>Start with the Broadband Tab if ...</strong></I><br/>
-                            ... you’re interested in looking at the picture of broadband in a particular area.  These maps display varying levels of broadband availability in color-coded quintiles -- 0-20%, 20-40%, 40-60%, 60-80%, 80-100% broadband access. You can also apply a health filter, such as obesity or physician access.  The map will dynamically identify the areas that meet the selected health filter and then visualize broadband availability in only those areas. 
+                            <em><strong>Choose Opioids if ...</strong></em><br/>
+                            ... you’re interested in intersecting broadband with drug mortality data and prescribing rate metrics, and comparing county mortality trends over time.
                         </p>
                         <p>
-                            <I><strong>Start with the Health Tab if...</strong></I><br/>
-                            ...you’re interested in looking at the picture of health through a broadband lens.  These maps show various health measures across the nation at the state and county levels.  You can also apply a broadband filter (e.g., less than 30% access to broadband).  The map dynamically identifies those areas that meet the selected broadband filter and then shows the selected health measure -- from low to high incidence -- in only those areas. 
+                            <em><strong>Choose Chronic Disease if ...</strong></em><br/>
+                            ...  you’re interested in exploring health outcomes like diabetes and obesity as well as access to care and quality of care measures like physician shortages or preventable hospitalizations.
                         </p>
                         <p>
-                            <I><strong>Use the Overview Tab to...</strong></I><br/>
-                            ...put all the pieces together and to visualize the interplay of broadband measures with health.  You can use “slider bars” to exercise greater control over what the map displays, setting your own parameters for various broadband, health and demographic measures. Only regions that match the selected parameters are shown.  Areas meeting the broadband parameter appear as blue; those meeting the health parameter appear as pink; and those matching both parameters appear as purple.  
+                            <em><strong>Then, start with the Broadband Tab if ...</strong></em><br/>
+                            ... you’re interested in looking at the picture of broadband in a particular area. These maps display varying levels of broadband connectivity in color-coded quintiles -- 0-20%, 20-40%, 40-60%, 60-80%, 80-100% broadband connectivity. You can then apply a health filter, such as obesity, physician access, or opioid mortality. The map will dynamically identify the areas that meet the selected health filter and then visualize broadband connectivity in only those areas.
+                        </p>
+                        <p>
+                            <em><strong>Start with the Health Tab if ...</strong></em><br/>
+                            ...you’re interested in looking at the picture of health through a broadband lens. These maps show various health measures across the nation at the state and county levels. You can also apply a broadband filter (e.g., 30-60% access to broadband). The map dynamically identifies those areas that meet the selected broadband filter and then shows the selected health measure -- from low to high incidence -- in only those areas.
+                        </p>
+                        <p>
+                            <em><strong>Use the Overview Tab to ...</strong></em><br/>
+                            ...put all the pieces together and to visualize the interplay of broadband measures with health. You can use “slider bars” to exercise greater control over what the map displays, setting your own parameters for various broadband, health and demographic measures. Only regions that match the selected parameters are shown. Areas meeting the broadband parameter appear as blue; those meeting the health parameter appear as pink; and those matching both parameters appear as purple.
+                        </p>
+                        <p>
+                            <em><strong>Default views ...</strong></em><br/>
+                            …The mapping platform general defaults to views showing areas of high health need (above the national average for the selected health measure) and lower connectivity resources (below the national average for the selected connectivity variable).
                         </p>
                         <br/>
-                        <h3 class="h4"><b>STEP 3: Apply Advanced Map Features to Generate Custom Maps</b></h3>
+                        <h3 class="h4"><strong>STEP 3: Apply Advanced Map Features to Generate Custom Maps</strong></h3>
                         <p>
-                            In addition to displaying basic broadband and health information, the map contains other features that allow you to customize map information and share it with others. For a more comprehensive listing of map features, view the <a class="external" href="https://www.fcc.gov/sites/default/files/C2HFCC_BroadbandHealthMap_QuickStartTutorial.pdf" target="_blank">Quick Start Tutorial</a>.  Here are a few examples to get you started.
+                            In addition to displaying basic broadband and health information, the map contains other features that allow you to customize map information and share it with others. For a more comprehensive listing of map features, view the <a class="external" href="https://www.fcc.gov/sites/default/files/C2HFCC_BroadbandHealthMap_QuickStartTutorial.pdf" target="_blank">Quick Start Tutorial</a>. Here are a few examples to get you started.
                         </p>
                         <p>
-                            <I><b>Toggle State and County Level Information:</b></I><br/>
-                            <img src="img/map-features.png" width="296" class="alignright" alt="Map features" title="Map features" />
+                            <em><strong>Toggle State and County Level Information:</strong></em><br/>
+                            <img src="img/map-features.png" width="" class="alignright" alt="Map features" title="Map features" />
                             Click on the Stack Tool in the upper left hand corner (below the + and – zoom buttons) to change from state view to county view.<br/><br/>
-                            When you select county level, the map updates dynamically and applies your selections to a nationwide county level map.  Doing this often shows patterns that might not be as clear at a state-level view. Drilling down to the county level also allows you to see greater differences within a state. You can then zoom in to focus on particular counties within a state. Once you click on a state and/or county, the statistics for that location will dynamically generate on the right.
+                            When you select county level, the map updates dynamically and applies your selections to a nationwide county level map. Doing this often shows patterns that might not be as clear at a state-level view. Drilling down to the county level also allows you to see greater differences within a state. You can then zoom in to focus on particular counties within a state. Once you click on a state and/or county, the statistics for that location will dynamically generate on the right.
                         </p>
                         <p>
-                            <I><b>Compare rural and urban areas:</b></I><br/>
-                            <img src="img/demographic-filter.png" width="350" class="alignleft" alt="Demographic filter" title="Demographic filter" />
-                            The Overview, Broadband, and Health tabs give you the option to apply a Demographic Filter for rurality (at different percentages like >50% or 0-20% rural) based on U.S. Census data.  This allows you to isolate patterns that might affect rural and urban areas differently.
+                            <em><strong>Compare rural and urban areas:</strong></em><br/>
+                            <img src="img/demographic-filter.png" width="" class="alignleft" alt="Demographic filter" title="Demographic filter"/>
+                            The Overview, Broadband, and Health tabs give you the option to apply a Demographic Filter for rurality (at different percentages like &ge;50% or 0-20% rural population) based on U.S. Census data. This allows you to isolate patterns that might affect rural and urban areas differently.
+                        </p>
+                        <div class="clearfix"></div>
+                        <div style="display:flex">
+                            <div style="margin-top:50px;margin-right:30px">
+                                <em><strong>Dig Deeper into how a county’s population experiences broadband:</strong></em><br/>
+                                On the Broadband tab, you can dig deeper into the statistics to see what percentage of a population has the greatest number of choices and highest speeds. Such insights could inform how connected health interventions are structured. In the example to the right, the graph shows that there are six providers. 99.2% of the population has access to fewer than two providers; and, download speeds of 100-1000 mbps are available to 58.9% of the population.
+                            </div>
+                            <div>
+                                <img src="img/broadband-1.png" width="611" class="" alt="Broadband graphs" title="Broadband graphs" />
+                            </div>
+                        </div>
+<!--                        <p>-->
+<!--                            <em><strong>Dig Deeper into how a county’s population experiences broadband:</strong></em><br/>-->
+<!--                            On the Broadband tab, you can dig deeper into the statistics to see what percentage of a population has the greatest number of choices and highest speeds.  In the example below, the graph shows that there are six providers. 99.2% of the population has access to fewer than two providers; and, download speeds of 100-1000 mbps to 58.9% of the population.  Such insights could inform how connected health interventions are structured.-->
+<!--                            <img src="img/broadband-3b.png" class="aligncenter" alt="Broadband graphs" title="Broadband graphs" />-->
+<!--                        </p>-->
+                        <div class="clearfix"></div>
+                        <p>
+                            <em><strong>See what’s driving the health outcome in a selected geography and how broadband can help:</strong></em><br/>
+                            The spider graphs on the Health Tab can help target broadband health interventions and collaborations. It also guides users to key areas for further investigation in the relevant county. This feature works dynamically, creating a graphical representation of the selected county compared to all counties with data in the U.S. All the variables are normalized (between 0 and 1) to the best and worst county for each measure. In the three sample counties below, for example, heroin deaths (left), synthetic opioid trends (middle), and prescription rates (right) represent areas of health need relative to other counties.
+                            <img src="img/broadband-3.png" width="1015" class="mt-1 aligncenter" alt="Spider graphs" title="Spider graphs" /><br/>
                         </p>
                         <div style="clear:both;">
                             <p>
-                            <I><b>Share What You’ve Found</b></I><br/>
-                            Each customized map generates a unique, dynamic URL or web link to help you share the map that you’ve created.  This feature serves as a good collaboration tool as you formulate strategies and discern insights from the data. Once you’ve created a map that you want to share, copy and paste the link displayed at the top of the mapping tool and email, text or share on social media.  With a single click, the recipient will be able to see the map you’ve created. 
+                            <em><strong>Share What You’ve Found</strong></em><br/>
+                            Each customized map generates a unique, dynamic URL or web link to help you share the map that you’ve created. This feature serves as a good collaboration tool as you formulate strategies and discern insights from the data. Once you’ve created a map that you want to share, copy and paste the link displayed at the top of the mapping tool and email, text or share on social media. With a single click, the recipient will be able to see the map you’ve created.
                             </p>
                         </div>
                         <p>
-                            These are just a few of the customization options and capabilities of the Mapping Broadband Health in America tool. Our <a class="external" href="https://www.fcc.gov/sites/default/files/C2HFCC_BroadbandHealthMap_QuickStartTutorial.pdf" target="_blank">Quick Start Tutorial</a> provides additional information and walks you through the mapping tool to maximize your experience. 
+                            We encourage you to explore and experience the maps on your own.  These are just a few of the customization options and capabilities of the Mapping Broadband Health in America platform.
                         </p>
                         <p>
                             View our <a class="external" href="https://www.fcc.gov/health/maps/faq" target="_blank">FAQs</a>.
@@ -199,8 +230,7 @@
                                         Federal Communications Commission
                                         <br>45 L Street NE
                                         <br>Washington, DC 20554
-                                    </address>
-                                    <br>
+                                    </address><br>
                                     <ul class="footermenu footermenu__phone">
                                         <li><a class="phone-link" href="tel:+18882255322">Phone: 1-888-225-5322</a></li>
                                         <li><a class="phone-link" href="tel:+18444322275">ASL Video Call: 1-844-432-2275</a></li>
@@ -211,7 +241,7 @@
                                     <ul class="socialmediaicons">
                                         <li><a class="link-ext social-media twitter" href="https://twitter.com/fcc">Twitter</a></li>
                                         <li><a class="link-ext social-media facebook" href="https://www.facebook.com/FCC">Facebook</a></li>
-                                        <li><a class="link-ext social-media youtube" href="https://www.youtube.com/fcc">Youtube</a></li>
+                                        <li><a class="link-ext social-media youtube" href="https://www.youtube.com/user/fccdotgovvideo">Youtube</a></li>
                                         <li><a class="link-ext social-media instagram" href="https://www.instagram.com/fcc">Instagram</a></li>
                                     </ul>
                                 </div>
@@ -261,22 +291,8 @@
                 </div>
             </footer>
     </div>
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/jquery-ui.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap-toolkit.min.js"></script>
-
-    
-
-    <script src="js/chart.js"></script>
-    
-    <!--<script src="./js/jquery.jcarousel.min.js"></script>
-    <script src="./js/jcarousel.responsive.js"></script>-->
-    <script src="js/jquery-color-animation-mainfile.js"></script>   
     <script src="js/theme.js"></script>
-    <!-- END CODE FOR DEMO ONLY! DO NOT USE! -->
-
-
-
 </body></html>

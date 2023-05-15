@@ -105,6 +105,7 @@ blockquote {
 .navbar {
     margin-bottom: 0;
     border: 0;
+    border-radius: 0;
 }
 
 
@@ -285,6 +286,10 @@ blockquote {
     width: 137px;
     font-size: 1em;
     display: block;
+}
+
+.navbar-logo:focus {
+	outline: 2px dotted #FFF;
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5),
@@ -1585,7 +1590,7 @@ screen and (max-width: 767px) and (min-resolution: 2dppx) {
     top: 0;
     left: 57.2%;
     width: 42.8%;
-    background: url(../img/bg-pattern-gray.png);
+    /*background: url(../img/bg-pattern-gray.png);*/
     text-align: center;
 }
 
@@ -1600,7 +1605,7 @@ screen and (max-width: 767px) and (min-resolution: 2dppx) {
     left: 0;
     width: 120px;
     height: 274px;
-    background: url(../img/shadow-mask.png) 0 0 no-repeat;
+    /*background: url(../img/shadow-mask.png) 0 0 no-repeat;*/
 }
 
 @media screen and (max-width: 991px) {
@@ -1623,7 +1628,7 @@ screen and (max-width: 767px) and (min-resolution: 2dppx) {
 @media screen and (min-width: 992px) {
     /* line 761, ../scss/ui-components/_header.scss */
     .menu-secondary > .dropdown-toggle-for-consumers.open {
-        background: #f1f0ea url(../img/dropdown-consumer-toggle-bg.jpg) 0 0 no-repeat;
+        /*background: #f1f0ea url(../img/dropdown-consumer-toggle-bg.jpg) 0 0 no-repeat;*/
         background-size: cover;
     }
 }
@@ -1634,7 +1639,7 @@ screen and (max-width: 767px) and (min-resolution: 2dppx) {
         right: 0;
         margin-left: 0;
         margin-right: -62.5px;
-        background: #fff url(../img/dropdown-consumer-bg.jpg) 100% 100% no-repeat;
+        /*background: #fff url(../img/dropdown-consumer-bg.jpg) 100% 100% no-repeat;*/
         background-size: auto 100%;
     }
 }
@@ -1772,13 +1777,6 @@ footer,
     padding: 6px;
 }
 
-@media (min-width: @screen-sm-min) {
-    footer,
-    .docs-attribution {
-        padding: 0 40px;
-    }
-}
-
 @media print {
     footer,
     .docs-attribution {
@@ -1788,12 +1786,6 @@ footer,
 
 footer {
     margin-left: 0;
-}
-
-@media (min-width: @screen-sm-min) {
-    footer {
-        margin-left: 200px;
-    }
 }
 
 .footer {
@@ -1827,9 +1819,9 @@ footer {
     padding-bottom: 5px;
     padding-top: 10px;
     margin-bottom: 20px;
-    .h5 {
-        margin-bottom: 10px;
-    }
+}
+.docs-attribution .h5 {
+    margin-bottom: 10px;
 }
 
 @media all and (min-width: 46.8em) {
@@ -2313,13 +2305,6 @@ main {
     }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-    /*.profile-search {
-        float: left;
-        margin: 0;
-    }*/
-}
-
 .hd-sections {
     display: none;
     visibility: hidden;
@@ -2404,14 +2389,6 @@ main {
         text-overflow: ellipsis;
         top: 3px;
     }
-    /*
-    .station-meta .frequency {
-        max-width: 38px;
-    }
-    .station-meta .channel {
-        max-width: 26px;
-    }
-    */
     .station-meta li {
         padding: 0 5px 0 0;
     }
@@ -2558,6 +2535,53 @@ main {
     margin-bottom: 10px;
 }
 
+.dl-nwStats {
+    font-size: 12px;
+}
+
+.dl-nwStats dt {
+    width: 50%;
+    white-space: nowrap;
+    font-weight: normal;
+}
+
+.dl-nwStats dd {
+    margin-left: 50%;
+    font-weight: bold;
+}
+
+#ov-stats {
+    margin-left: 1.33rem;
+    margin-top: 0;
+    margin-right: 1.33rem;
+    margin-bottom: 0;
+}
+
+#ov-stats .row {
+    margin-bottom: 1px;
+}
+
+.stat-name {
+    padding-right: 0;
+}
+
+.stat-value {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    #ov-stats {
+        margin: 0; !important;
+    }
+    .stat-name {
+        text-align: left;
+    }
+    .stat-value {
+        padding-bottom: 5px;
+    }
+}
+
+
 
 /* =============================================================================
    Tables
@@ -2565,12 +2589,6 @@ main {
 
 table th {
     color: #000;
-    /*
-    border-bottom: 2px solid #d3d3d3;
-    font-size: 12px;
-    font-weight: bold;
-    padding: 3px 0;
-    text-align: left;*/
 }
 
 .table > thead > tr > th {
@@ -2749,7 +2767,6 @@ table.floatThead-table {
    ========================================================================== */
 
 .icon {
-    background: url("../img/icons-sprite.png") no-repeat 0px -16px transparent;
     cursor: pointer;
     display: inline-block;
     height: 16px;
@@ -2960,7 +2977,6 @@ table.floatThead-table {
 .browser .folder.county .icon,
 .browser .folder.pac .icon,
 .browser .folder.office .icon {
-    background: url("../img/icons-sprite.png") no-repeat -208px -32px transparent;
     display: inline-block;
     height: 32px;
     width: 32px;
@@ -3001,7 +3017,6 @@ table.floatThead-table {
 }
 
 .browser-path .sepr {
-    background: url("../img/icons-sprite.png") no-repeat -110px -62px transparent;
     display: inline-block;
     height: 16px;
     width: 16px;
@@ -3403,6 +3418,7 @@ a.gen-passcode {
 
 #map {
     height: 720px;
+    border: 1px solid transparent;
 }
 
 .map-container {
@@ -3411,11 +3427,11 @@ a.gen-passcode {
 }
 
 .btn-geo {
-    border: 1px solid rgba(0, 0, 0, 0.4);
+    border: 2px solid rgba(0,0,0,.2);
     border-radius: 3px;
+    display: block;    
     left: 10px;
     padding: 2px;
-    position: absolute;
     width: 28px;
     height: 26px;
     background: #ffffff;
@@ -3434,6 +3450,27 @@ a.gen-passcode {
 .btn-geo-legend {
     top: 180px;
     z-index: 9;
+}
+
+.leaflet-touch .leaflet-control-fullscreen a {
+    background-position: 0 0;
+}
+
+.leaflet-touch.leaflet-fullscreen-on .leaflet-control-fullscreen a {
+    background-position: 0px -25px;
+}
+
+/* Position nationwide and geolocation buttons */
+.leaflet-control-layers-expanded {
+    position: absolute;
+    top: 65px;
+    width: 125px;
+    z-index: 801;
+}
+
+
+#btn-currentLoc {
+    margin-bottom: 10px;
 }
 
 .map-legend {
@@ -3733,6 +3770,9 @@ a.gen-passcode {
     #app-title h3 {
         display: none;
     }
+    #browse-by-category {
+        font-size: small;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -3744,7 +3784,7 @@ a.gen-passcode {
         max-width: 1180px;
     }
     .panel-container {
-        min-width: 420px
+        min-width: 415px
     }
     .geo-container {
         max-width: 780px
@@ -3763,7 +3803,6 @@ a.gen-passcode {
 .panel-sec-heading {
     border: 0;
     color: #266AD0;
-    /*#2c75d6;*/
     font-weight: bold;
     display: inline-block;    
     margin-top: 0px;
@@ -3807,9 +3846,8 @@ a.gen-passcode {
     margin-right: 0px;
 }
 
-#download-data-div {
-    font-size: 11px;
-    color: #99999;
+.download-data-div {
+    font-size: 12px;
     padding: 15px 0;
 }
 
@@ -3872,12 +3910,95 @@ a.gen-passcode {
     display: inline-block;
     line-height: 32px;
     font-size: 13px;
+    white-space: nowrap;
+}
+
+.bbOpioid-slider {
+    font-size: 13px;
+}
+
+#label-bbOpRange {
+    color: #91357d;
+    font-weight: bold;
+}
+
+#label-bbOpTrendsRange {
+    color: #91357d;
+}
+
+#label-opioid,
+#label-health-opioid {
+    color: #91357d;
+    font-size: 13px;
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+#label-health-opioid {
+    padding-bottom: 5px;
+}
+
+#label-opioid-sub {
+    font-weight: normal;
+    font-size: 13px;
+    padding-bottom: 10px;
+}
+
+.bbOpioid-slider p {
+    margin-bottom: 0;
+}
+
+.slider-bbOpioid {
+    background: #D9D9D9;
+}
+
+.slider-bbOpioid .ui-widget-header {
+    background: #91357d;
+}
+
+.slider-bbOpiod-label {
+    color: #91357d;    
+    display: inline-block;
+    font-weight: 700;
+    margin: 10px 0 5px;
+}
+
+.slider-bbOpiod-label.max {
+    position: absolute;
+    right: 15px;
+}
+
+#slider-opioid .ui-slider-range {
+    background: #964c8c;
+    height: 1em;
+    margin-top: -0.01em;
+}
+
+#slider-opioid .ui-slider-horizontal .ui-slider-range {
+    top: 0;
+    height: 100%;
+}
+
+#slider-opioid .ui-slider .ui-slider-range {
+    position: absolute;
+    z-index: 1;
+    font-size: .7em;
+    display: block;
+    border: 0;
+    background-position: 0 0;
+}
+
+#bbOpioidTrendsFilter {
+    margin-top: 10px;
+}
+
+#bbOpioidTrendsFilter label {
+    font-size: 12px;
 }
 
 .data-label {
     border: 0;
     color: #266AD0;
-    /*#2c75d6;*/
     font-weight: bold;
     display: inline-block;
     line-height: 25px;
@@ -3886,8 +4007,17 @@ a.gen-passcode {
     letter-spacing: 0.5px;
 }
 
-.select-insight {
+.dropdown-md {
     width: 200px !important;
+    display: inline-block;
+}
+
+.dropdown-lg {
+    width: 100% !important;
+}
+
+.select-opioid {
+    width: 365px !important;
     display: inline-block;
 }
 
@@ -3913,9 +4043,6 @@ a.gen-passcode {
     ;
 }
 
-
-/*#in-cnt-div { width: 100%; vertical-align: middle; height: 70px;} */
-
 #select-in-cnt-div {
     display: inline-block;
     vertical-align: middle;
@@ -3940,7 +4067,6 @@ a.gen-passcode {
 .in-tooltip,
 .hh-tooltip,
 .bb-tooltip {
-    color: #848484;
     display: inline-block;
     font-size: 16px !important;
 }
@@ -3961,6 +4087,10 @@ a.gen-passcode {
     width: auto;
 }
 
+.tt-sm {
+    min-width: 40px !important;
+}
+
 .slider-tooltip-div {
     line-height: 30px;
 }
@@ -3973,6 +4103,33 @@ a.gen-passcode {
     min-width: 220px;
 }
 
+.long-tooltip > .tooltip-inner {
+    text-align: left !important;
+}
+
+.fa-info-circle {
+    color: #0050cc;
+    cursor: default;
+}
+
+#tooltip-overview-na,
+#tooltip-bb-na {
+    margin-left: 5px;
+    display: none;
+}
+
+#tooltip-overview-na + .tooltip .tooltip-inner,
+#tooltip-bb-na + .tooltip .tooltip-inner {
+    width: 220px !important;
+}
+
+#tooltip-health-na {
+    margin-left: 5px;
+}
+
+.tooltip {
+    z-index: 9999;
+}
 
 /* charts */
 
@@ -4127,8 +4284,17 @@ a.gen-passcode {
     height: 36px;
 }
 
+.ui-autocomplete-input {
+    /*border-left: 0;*/
+    border-right: 0;
+}
+
 .input-group {
     width: 100%;
+}
+
+.input-group .dropdown-toggle {
+    border-right: 0;
 }
 
 .input-group .form-control:first-child {
@@ -4154,13 +4320,6 @@ a.gen-passcode {
 }
 .btn-primary.active,.btn-primary:active {
     font-weight: bold;
-}
-
-filter-select {
-    font-family: Arial, sans-serif;
-    box-shadow: none;
-    font-size: 12px;
-    border: none;
 }
 
 
@@ -4208,10 +4367,6 @@ filter-select {
 
 .layer-drop-sel {
     width: 100%;
-}
-
-.panel-data {
-    /*padding: 5px 0px;*/
 }
 
 .selection-row {
@@ -4272,6 +4427,7 @@ filter-select {
 
 h2 {
     display: inline-block;
+    margin: 2rem 0;
 }
 
 h3,
@@ -4310,8 +4466,6 @@ img.aligncenter {
 }
 
 img.timeline {
-    /*border: 2px solid gray;
-    border-radius: 10px;*/
     margin: 5px;
     padding: 10px;
 }
@@ -4387,7 +4541,9 @@ img.timeline {
 .row-space {
     padding-bottom: 5px;
 }
-
+.row-space-top {
+    padding-top: 5px;
+}
 .nav>li>a {
     padding: 10px !important;
 }
@@ -4443,9 +4599,17 @@ a.external {
 .dropdown-header{
     padding: 3px 10px;
 }
+
+/* Bootstrap Select Plugin Style Overrides */
+.bootstrap-select.btn-group .dropdown-toggle .filter-option {
+    font-size: 13px;
+}
+
 .bootstrap-select.btn-group .dropdown-menu li a.opt {
     padding-left: 18px !important;
 }
+
+
 .col-sm-12 .col-xs-7 {
      padding-right: 0px !important;
 }
@@ -4462,4 +4626,101 @@ a.external {
 .bb-subtype {
     font-size: 12px !important;
     display: block;
+}
+
+.hiddenDD {
+    visibility: hidden;
+}
+
+.metrics {
+    display: none;
+}
+.space-bottom {
+    margin-bottom: 6px;
+}
+
+.dropdown-menu {
+    font-size: 13px !important;
+    z-index: 99999 !important;
+}
+
+#input-county:focus {
+	border-color: #6699cc;
+}
+
+#map:focus, #btn-nation:focus, #btn-currentLoc:focus {
+	border: 1px dotted #000;
+}
+
+.leaflet-control-layers-separator {
+	border-width: 3px;
+}
+
+.download-data-div {
+	padding: 0;
+	margin-top: 15px;
+}
+.download-data-div legend {
+	border-bottom: none;
+	font-size: inherit;
+	margin: 0;
+}
+
+.dropdown-menu .divider {
+	height: 3px;
+}
+
+.dropdown-menu .dropdown-header {
+	color: #000;
+	font-weight: bold;
+}
+
+#input-county::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #767676;
+    opacity: 1; /* Firefox */
+}
+
+#input-county:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #767676;
+}
+
+#input-county::-ms-input-placeholder { /* Microsoft Edge */
+    color: #767676;
+}
+
+abbr[title].faqs {
+    border-bottom: none;
+    text-decoration: none;
+}
+
+.carousel-control {
+	text-shadow: 0 1px 2px rgba(0,0,0,1);
+}
+
+.ui-widget-content .ui-state-default {
+	border: 1px solid #999999;
+// lightest gray safe to use on white Level AA is 767676
+}
+html .ui-widget-content .ui-state-default.ui-state-hover {
+	border: 1px solid #000;
+}
+.slider-bar.ui-slider, .slider-bbOpioid.ui-slider {
+	border-bottom: 1px solid #999999;
+// lightest gray safe to use on white Level AA is 767676
+}
+
+.mt-1 {
+    margin-top: 20px;
+}
+
+.mb-1 {
+    margin-bottom: 20px;
+}
+
+.pt-1 {
+    padding-top: 20px;
+}
+
+p, li {
+    line-height: 1.5;
 }

@@ -24,9 +24,15 @@
 	<link href="https://api.mapbox.com/mapbox.js/v3.1.0/mapbox.css" rel="stylesheet">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 
+	<!--<link href="css/font-awesome.min.css" rel="stylesheet" >-->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" >
 
-	<link rel="stylesheet" href="css/bootstrap-select.min.css" />
+	<link rel="stylesheet" href="css/bootstrap-select.min.css" />	
+    
+    <!--[if lt IE 9]>
+      <script src="js/vendor/html5shiv.min.js"></script>
+      <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
 
      <script>
     (function(i, s, o, g, r, a, m) {
@@ -604,12 +610,12 @@
                                          </div>
 									</div>
 									<br />
-                                    <div align="center">
-                                        <div class="carousel-cont">
-                                            <canvas id="ch-canvas-health-1" width="250" height="150"></canvas>
-                                            <div id="ch-legend-health-1" style="width: 300px; height: 30px; text-align: center;"></div>
+									<div class="row">
+                                        <div align="center">
+    										<canvas id="ch-canvas-health-1" style="width: 300px; height: 220px;"></canvas>
+    										<div id="ch-legend-health-1" style="width: 300px; height: 30px; text-align: center;"></div>						
                                         </div>
-                                    </div>
+									</div>									
                                 </div>
 																
 								<!-- Broadband Tab  **************************************************************** -->
@@ -788,21 +794,20 @@
 										<div class="carousel-inner" role="listbox">
 											<div class="item active">
 												<div class="carousel-cont">
-													<canvas id="ch-canvas-broadband-1" class="carousel-canvas" width="250" height="180"></canvas>
-													<div id="ch-legend-broadband-1" class="carousel-legend" >
-                                                        <div style="background-color:rgba(0,80,204,1); width: 20px; height: 2px; display: inline-block; margin: 4px 0;"></div>&nbsp;
-                                                        Number of Providers
-                                                    </div>
+													<canvas id="ch-canvas-broadband-1" class="carousel-canvas"></canvas>
+													<div id="ch-legend-broadband-1" class="carousel-legend" ></div>						
 												</div>
 											</div>
 											<div class="item">
 												<div class="carousel-cont">
 													<canvas id="ch-canvas-broadband-2" class="carousel-canvas"></canvas>
+													<div id="ch-legend-broadband-2" class="carousel-legend"></div>						
 												</div>
 											</div>
 											<div class="item">
 												<div class="carousel-cont">
 													<canvas id="ch-canvas-broadband-3" class="carousel-canvas"></canvas>
+													<div id="ch-legend-broadband-3" class="carousel-legend"></div>						
 												</div>
 											</div>
 										</div>
@@ -950,10 +955,8 @@
                                         <div class="carousel-inner" role="listbox">
                                             <div class="item active">
                                                 <div class="carousel-cont">
-                                                    <canvas id="ch-canvas-population-1" class="carousel-canvas" width="250" height="180"></canvas>
-                                                    <div id="ch-legend-population-1" class="carousel-legend" >
-                                                        <div style="background-color:#3D59D7; width: 16px; height: 16px; display: inline-block;"></div>&nbsp;Urban &nbsp; <div style="background-color:#71DAD6; width: 16px; height: 16px; display: inline-block;"></div>&nbsp;Rural &nbsp;
-                                                    </div>
+                                                    <canvas id="ch-canvas-population-1" class="carousel-canvas"></canvas>
+                                                    <div id="ch-legend-population-1" class="carousel-legend" ></div>
                                                 </div>
                                             </div>                                          
                                         </div>
@@ -990,8 +993,7 @@
                                         Federal Communications Commission
                                         <br>45 L Street NE
                                         <br>Washington, DC 20554
-                                    </address>
-                                    <br>
+                                    </address><br>
                                     <ul class="footermenu footermenu__phone">
                                         <li><a class="phone-link" href="tel:+18882255322">Phone: 1-888-225-5322</a></li>
                                         <li><a class="phone-link" href="tel:+18444322275">ASL Video Call: 1-844-432-2275</a></li>
@@ -1002,7 +1004,7 @@
                                     <ul class="socialmediaicons">
                                         <li><a class="link-ext social-media twitter" href="https://twitter.com/fcc">Twitter</a></li>
                                         <li><a class="link-ext social-media facebook" href="https://www.facebook.com/FCC">Facebook</a></li>
-                                        <li><a class="link-ext social-media youtube" href="https://www.youtube.com/fcc">Youtube</a></li>
+                                        <li><a class="link-ext social-media youtube" href="https://www.youtube.com/user/fccdotgovvideo">Youtube</a></li>
                                         <li><a class="link-ext social-media instagram" href="https://www.instagram.com/fcc">Instagram</a></li>
                                     </ul>
                                 </div>
@@ -1053,14 +1055,20 @@
             </footer>
     </div>
     
-	<script src="js/jquery-3.6.0min.js"></script>
+	<script src="js/jquery-1.11.3.min.js"></script>
 	<script src="js/jquery-ui.js"></script>
 
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/bootstrap-toolkit.min.js"></script>
+    <!--
+	<script src="js/mapbox.js"></script>
+	-->
 
     <script src='https://api.mapbox.com/mapbox.js/v3.1.0/mapbox.js'></script>
-
+    
+    <!--<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/js/bootstrap-select.min.js"></script>-->
+	<!--<script src="//www.bootply.com/plugins/bootstrap-select.min.js"></script>-->
+	
 	<script src="js/bootstrap-select.js"></script>
 	<script src="js/chart.js"></script>
 	<script src="js/jquery-color-animation-mainfile.js"></script>	

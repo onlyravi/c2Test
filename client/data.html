@@ -15,18 +15,10 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/vnd.microsoft.icon" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Connect2HealthFCC - Mapping Broadband Health in America 2017</title>
+    <title>Connect2HealthFCC - Mapping Broadband Health in America 2022</title>
     <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700|Lato:500" rel="stylesheet" type="text/css">
     <link href="css/bootstrap.min.css" rel="stylesheet">    
-    <link href="css/jcarousel.responsive.css" rel="stylesheet" />
-    <link href="css/icon-styles.css" rel="stylesheet">
     <link href="css/app-theme.css" rel="stylesheet">
-    <link href="css/jquery-ui.css" rel="stylesheet">
-    <!--<link href="css/font-awesome.min.css" rel="stylesheet" >-->
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" >
-
-    <link rel="stylesheet" href="css/bootstrap-select.min.css" />       
-    <link rel="stylesheet" href="css/jquery-ui.css">
 
      <script>
     (function(i, s, o, g, r, a, m) {
@@ -49,308 +41,600 @@
 <body>
     <div class="page row-offcanvas row-offcanvas-right">
         <header class="site-header">
-<div class="jumpLinks"> <a href="#skiptarget1" class="sr-only focusable">Skip to main content</a> <a href="#skiptarget3" class="sr-only focusable">Skip to footer and contact information</a> </div>
-    <nav role="navigation">
-        <div class="navbar navbar-default navbar-primary">
-            <div class="container">
-                <div class="navbar-header">
-                    <h1 class="navbar-brand">
-                  <a title="Home" href="http://fcc.gov" class="navbar-logo">
-                    <span class="sr-only">Federal Communications Commission</span>
-                  </a>
-                </h1>
+            <div class="jumpLinks"> <a href="#skiptarget1" class="sr-only focusable">Skip to main content</a> <a href="#skiptarget3" class="sr-only focusable">Skip to footer and contact information</a> </div>
+            <nav role="navigation" aria-label="Main">
+                <div class="navbar navbar-default navbar-primary">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <h1 class="navbar-brand">
+                          <a title="Home" href="http://fcc.gov" class="navbar-logo">
+                            <span class="sr-only">Federal Communications Commission</span>
+                          </a>
+                        </h1>
+                        </div>
+                        <ul aria-hidden="true" id="menu-primary" class="nav navbar-nav nav-offcanvas-right">
+                            <li class="active">
+                                <a aria-controls="browse-by-category" href="index.html">
+                                    <strong class="title-emphasis">Connect2Health<sup>FCC</sup></strong>
+                                </a>
+                            </li>
+                        </ul>
+                        <div id="app-title">
+                            <h2>Mapping Broadband Health in America 2022</h2>
+                            <h3>Everyone connected&hellip; to the people, services and information they need to get well and stay healthy.</h3>
+                        </div>
+                        <div class="navbar-controls">
+                            <a data-toggle-direction="right" data-toggle="offcanvas" class="btn navbar-btn btn-toggle-menu" type="button">
+                                <span class="btn-inner btn-inner-menu"><span class="sr-only">Menu</span></span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <ul aria-hidden="true" id="menu-primary" class="nav navbar-nav nav-offcanvas-right">
-                    <li class="active">
-                        <a aria-controls="browse-by-category" href="index.html">
-						<!--<div class="text-prefix">FCC Initiatives</div>-->
-                            <strong class="title-emphasis">Connect2Health<sup>FCC</sup></strong>
-                        </a>
-                    </li>
-                </ul>
-                <div id="app-title">
-                    <h2>Mapping Broadband Health in America 2017</h2>
-                    <h3>Everyone connected... to the people, services and information they need to get well and stay healthy.</h3>
+                <div class="navbar-secondary navbar-default yamm nav-offcanvas nav-offcanvas-right">
+                    <div id="menu-secondary" class="tab-content">
+                        <div class="container tab-pane active" id="browse-by-category">
+                            <ul class="nav nav-tabs menu-secondary" role="navigation" aria-label="Secondary">
+                                <li class="dropdown dropdown-left yamm-fw">
+                                    <a href="index.html" class="dropdown-toggle">
+                                        <span class="link-title dropdown-link-title">Map</span>
+                                    </a>
+                                </li>
+                                <li class="dropdown dropdown-left yamm-fw">
+                                    <a href="background.html" class="dropdown-toggle">
+                                        <span class="link-title dropdown-link-title">Background</span>
+                                    </a>
+                                </li>
+                                <li class="dropdown dropdown-left yamm-fw">
+                                    <a href="getting-started.html" class="dropdown-toggle">
+                                        <span class="link-title dropdown-link-title">Getting Started</span>
+                                    </a>
+                                </li>
+                                <li class="dropdown dropdown-left yamm-fw">
+                                    <a href="focus-on-opioids.html" class="dropdown-toggle">
+                                        <span class="link-title dropdown-link-title">Focus on Opioids</span>
+                                    </a>
+                                </li>
+                                <li class="dropdown dropdown-left yamm-fw">
+                                    <a href="community-engagement.html" class="dropdown-toggle">
+                                        <span class="link-title dropdown-link-title">Community Engagement</span>
+                                    </a>
+                                </li>
+                                <li class="dropdown dropdown-left yamm-fw">
+                                    <a href="data.html" class="dropdown-toggle active" aria-current="true">
+                                        <span class="link-title dropdown-link-title">Data</span>
+                                    </a>
+                                </li>
+                                <li class="dropdown dropdown-left yamm-fw">
+                                    <a href="about.html" class="dropdown-toggle">
+                                        <span class="dropdown-link-title link-title">About C2HFCC</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <!--.nav-tabs -->
+                        </div>
+                    </div>
                 </div>
-                <div class="navbar-controls">
-                    <a data-toggle-direction="right" data-toggle="offcanvas" class="btn navbar-btn btn-toggle-menu" type="button">
-                        <span class="btn-inner btn-inner-menu"><span class="sr-only">Menu</span></span>
-                    </a>
-                </div>                                 
-            </div>
-        </div>
-		
-        <div aria-hidden="true" class="navbar-secondary navbar-default yamm nav-offcanvas nav-offcanvas-right">
-            <div id="menu-secondary" class="tab-content">
-                <div class="container tab-pane active" id="browse-by-category">
-                    <ul class="nav nav-tabs menu-secondary" role="navigation">            
-                        <li class="dropdown dropdown-left yamm-fw">
-                            <a href="index.html" class="dropdown-toggle">
-                                <span class="link-title dropdown-link-title">Map</span>
-                            </a>
-                        </li>
-                        <li class="dropdown dropdown-left yamm-fw">
-                            <a href="background.html" class="dropdown-toggle">
-                                <span class="link-title dropdown-link-title">Background</span>
-                            </a>
-                        </li>  
-                        <li class="dropdown dropdown-left yamm-fw">
-                            <a href="getting-started.html" class="dropdown-toggle">
-                                <span class="link-title dropdown-link-title">Getting Started</span>
-                            </a>
-                        </li>  
-                        <li class="dropdown dropdown-left yamm-fw">
-                            <a href="community-engagement.html" class="dropdown-toggle">
-                                <span class="link-title dropdown-link-title">Community Engagement</span>
-                            </a>
-                        </li>
-                        <li class="dropdown dropdown-left yamm-fw">
-                            <a href="data.html" class="dropdown-toggle active">
-                                <span class="link-title dropdown-link-title">Data</span>
-                            </a>
-                        </li>                                                
-                        <li class="dropdown dropdown-left yamm-fw">
-                            <a href="about.html" class="dropdown-toggle">
-                                <span class="dropdown-link-title link-title">About C2HFCC</span>
-                            </a>
-                        </li>
-                    </ul>
-                    <!--.nav-tabs -->
-                </div>
-            </div>
-        </div>
-        <!-- .secondary-menu -->
-    </nav>
-</header>
-<div class="clearfix"></div>
-<a class="visuallyhidden" id="skiptarget1" tabindex="-1"></a>
+                <!-- .secondary-menu -->
+            </nav>
+        </header>
+        <div class="clearfix"></div>
+        <a class="visuallyhidden" id="skiptarget1" tabindex="-1"></a>
         <main class="container">
             <div class="row">
                 <div class="col-xs-12">
-                    <div class="main-content">                    	
-                        
-							<h2>Data</h2>
-							<p> 
-							     The following table shows each broadband and health variable used in the 2017 release of the <I>Mapping Broadband Health in America</I> platform, its definition, and the data source. Proportions for broadband access statistics are calculated using 2014 demographic data from GeoLytics, E. Brunswick, NJ. Additional information about the demographic data from the <a class="external" href="http://www.census.gov/2010census" target="_blank">U.S. Census Bureau</a> is available on its website. Learn more about the <a class="external" href="https://www.fcc.gov/health/maps/methodology" target="_blank">methodology</a>.
-                            </p>
+                    <div class="main-content">
+                        <h2>Data</h2>
+                        <p>
+                            The data in the <em>Mapping Broadband Health in America 2022</em> platform is extracted from
+                            leading data sources for broadband, chronic disease, and opioids measures as
+                            well as demographic metrics. The four data tables below briefly identify each of the
+                            measures (as denominated in the platform), its definition, the primary data source, and the
+                            data year. Hyperlinks in the tables direct users to the primary data sources.
+                        </p>
+                        <ul>
+                            <li>More detailed information about the data that underlies the platform may be downloaded
+                                in our <a href="https://www.fcc.gov/health/maps/opioids-data" target="_blank" class="external">Data Explainer</a> or in the more
+                                researcher-focused <a href="https://www.fcc.gov/health/maps/opioids-data" target="_blank" class="external">Data Dictionary</a> accompanying the Mapping Broadband Health in America platform.</li>
+                            <li>In addition, the mapping platform was built using an Open Integration model that allows
+                                users to integrate their own datasets. To view the three-step process, specific code
+                                examples, extensibility files and additional instructions, visit GitHub. <a
+                                        class="external"
+                                        href="https://github.com/FCC/c2hgis-web/tree/master/Open%20Integration%20Files"
+                                        target="_blank">View the Open Integration process in GitHub.</a></li>
+                            <li>Questions on the data in the mapping platform may be sent to us at <a
+                                    href="mailto:engageC2H@fcc.gov">engagec2h@fcc.gov</a>.
+                            </li>
+                        </ul>
+                        <div style="width: 80%; margin: 0 auto">
+                            <div style="border-top: 1px solid #d2d2d2; margin: 30px 0"></div>
+                        </div>
+                        <p>
+                            For <strong>broadband</strong>, we focus on two key dimensions – broadband access and
+                            Internet adoption – in addition to critical sub-measures on rurality and speed.
+                            Increasingly, adoption and speed are critical to understanding the full picture of broadband
+                            availability in a community.
+                        </p>
+                        <h3 class="pull-left">Broadband Access and Internet Adoption</h3>
+                        <table class="data-source-div-table">
+                            <thead>
+                                <tr>
+                                    <th class="left-space" style="width: 15%">Dimensions</th>
+                                    <th class="left-space" style="width: 20%">Measures</th>
+                                    <th class="left-space" style="width: 30%">Primary Data (Data Year)</th>
+                                    <th class="left-space" style="width: 35%">Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="7" class="botton-right left-space"><strong>Access</strong></td>
+                                    <td class="botton-right left-space"><strong>Broadband Access (Fixed Broadband)</strong></td>
+                                    <td rowspan="7" class="botton-right left-space"><a
+                                            href="https://www.fcc.gov/form-477-broadband-deployment-data-december-2018-version-2"
+                                            class="external" target="_blank">Fixed Broadband Deployment Data from FCC Form
+                                        477,
+                                        FCC Staff Population Block Estimates (2018)</a>
+                                    </td>
+                                    <td class="botton left-space">Percentage of the population living in census blocks with access to fixed broadband service at 25/3 Mbps or
+                                        higher advertised speeds.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="botton-right left-space"><strong>Rural Access</strong></td>
+                                    <td class="botton left-space">Percentage of the population living in rural census blocks with access to fixed broadband service at
+                                        25/3 Mbps or higher advertised speeds.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="botton-right left-space"><strong>Download Speed (Fixed Download)</strong></td>
+                                    <td class="botton left-space">Percentage of population living in census blocks with access to fixed broadband service at 25 Mbps or higher
+                                        advertised download speeds.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="botton-right left-space"><strong>Upload Speed (Fixed Upload)</strong></td>
+                                    <td class="botton left-space">Percentage of population living in census blocks with access to fixed broadband service at 3 Mbps or higher
+                                        advertised upload speeds.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="botton-right left-space"><strong>Number of Providers</strong></td>
+                                    <td class="botton left-space">Number of fixed broadband providers offering service to consumers at 25/3 Mbps of higher advertised speeds.</td>
+                                </tr>
+                                <tr>
+                                    <td class="botton-right left-space"><strong>Most Common Download</strong></td>
+                                    <td class="botton left-space">Most commonly advertised download speed tier in an area.</td>
+                                </tr>
+                                <tr>
+                                    <td class="botton-right left-space"><strong>Most Common Upload</strong></td>
+                                    <td class="botton left-space">Most commonly advertised upload speed tier in an area.</td>
+                                </tr>
+                                <tr>
+                                    <td class="right left-space"><strong>Adoption</strong></td>
+                                    <td class="right left-space"><strong>Internet Adoption</strong></td>
+                                    <td class="right left-space">Internet Access Services Report; Form 477 County Data on Internet Access Services (2018)</td>
+                                    <td class="left-space">The number of residential (consumer) connections per 100 households.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div style="margin: 10px 0 10px 0; text-align: right">
+                            <strong>Data Provider (Release/Access Year):</strong> FCC Fixed Broadband Deployment Data from FCC Form 477 (2020); FCC Staff Population Block Estimates (2020); Internet Access Services Report (2020); Form 477 County Data on Internet Access Services (2020)
+                        </div>
+                        <div style="width: 80%; margin: 0 auto">
+                            <div style="border-top: 1px solid #d2d2d2; margin: 30px 0"></div>
+                        </div>
+                        <p>For <strong>health</strong>, and as a part of the 2022 update, the platform now includes both
+                            selected chronic disease data as well as opioid mortality and prescription rates. As
+                            detailed in the charts below, these metrics reflect various dimensions of health. For
+                            chronic disease, we focus on four critical dimensions – health outcomes, access to care,
+                            quality of care, and health behaviors – where broadband has been shown to enable effective and
+                            cost-saving interventions. For opioids, this initial phase of the effort to intersect
+                            drug abuse data with broadband focuses on two dimensions of the ongoing crisis –
+                            outcomes (mortality rates) and risk factors for overdose (prescription rates); we anticipate
+                            that the second phase will include other risk factors and intermediate variables established
+                            in the research literature as precursors and drivers of opioid abuse and overdose, as
+                            described in the <a href="focus-on-opioids.html#ConceptualModel">Broadband and Opioids Conceptual Model.</a></p>
+                        <h3 class="pull-left">Chronic Disease and Health Behaviors</h3>
+                        <table class="data-source-div-table">
+                            <thead>
+                                <tr>
+                                    <th class="left-space" style="width: 15%">Health Dimensions and Factors</th>
+                                    <th class="left-space" style="width: 20%">Health Measures</th>
+                                    <th class="left-space" style="width: 30%">Primary Data (Data Year)</th>
+                                    <th class="left-space" style="width: 35%">Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="5" class="botton-right left-space"><strong>Health Outcomes</strong></td>
+                                    <td class="botton-right left-space"><strong>Diabetes</strong></td>
+                                    <td class="botton-right left-space"><a href="https://gis.cdc.gov/grasp/diabetes/diabetesatlas.html" class="external"
+                                           target="_blank">United States Diabetes Surveillance System (2016) </a></td>
+                                    <td class="botton left-space">Percentage of adults (aged 20 and above) with diagnosed diabetes.</td>
+                                </tr>
+                                <tr>
+                                    <td class="botton-right left-space"><strong>Obesity</strong></td>
+                                    <td class="botton-right left-space"><a href="https://gis.cdc.gov/grasp/diabetes/diabetesatlas.html" class="external"
+                                           target="_blank">United States Diabetes Surveillance System (2016)</a></td>
+                                    <td class="botton left-space">Percentage of adults (aged 20 and above) that report a body mass index (BMI) greater
+                                        than or equal to 30 kg/m<sup>2</sup>.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="botton-right left-space"><strong>Poor/Fair Health</strong></td>
+                                    <td class="botton-right left-space"><a href="https://www.cdc.gov/brfss/annual_data/annual_2017.html" class="external"
+                                           target="_blank">Behavioral Risk Factor Surveillance System (2017)</a></td>
+                                    <td class="botton left-space">Percentage of adults who consider themselves to be in poor or fair health (age-adjusted).</td>
+                                </tr>
+                                <tr>
+                                    <td class="botton-right left-space"><strong>Sick Days</strong></td>
+                                    <td class="botton-right left-space"><a href="https://www.cdc.gov/brfss/annual_data/annual_2017.html" class="external"
+                                           target="_blank">Behavioral Risk Factor Surveillance System (2017)</a></td>
+                                    <td class="botton left-space">Average number of physically unhealthy days reported in the past 30 days
+                                        (age-adjusted).
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="botton-right left-space"><strong>Premature Death</strong></td>
+                                    <td class="botton-right left-space"><a href="https://wonder.cdc.gov/mortSQL.html" class="external" target="_blank">National
+                                        Center for Health Statistics – Mortality Files (2016-2018)</a></td>
+                                    <td class="botton left-space">Years of potential life lost before age 75 per 100,000 population (age-adjusted).
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="4" class="botton-right left-space"><strong>Access to Care</strong></td>
+                                    <td class="botton-right left-space"><strong>Physician Access</strong></td>
+                                    <td class="botton-right left-space"><a href="https://data.hrsa.gov/topics/health-workforce/ahrf" class="external"
+                                           target="_blank">Area Health Resource File/American Medical Association (2017)</a>
+                                    </td>
+                                    <td class="botton left-space">Ratio of population to primary care physicians.</td>
+                                </tr>
+                                <tr>
+                                    <td class="botton-right left-space"><strong>Primary Care Physicians</strong></td>
+                                    <td class="botton-right left-space"><a href="https://data.hrsa.gov/topics/health-workforce/ahrf" class="external"
+                                           target="_blank">Area Health Resource File/American Medical Association (2017)</a>
+                                    </td>
+                                    <td class="botton left-space">Number of primary care physicians.</td>
+                                </tr>
+                                <tr>
+                                    <td class="botton-right left-space"><strong>Dental Providers</strong></td>
+                                    <td class="botton-right left-space"><a href="https://data.hrsa.gov/topics/health-workforce/ahrf" class="external"
+                                           target="_blank">Area Health Resource File/National Provider Identification File
+                                        (2018)</a></td>
+                                    <td class="botton left-space">Number of dentists.</td>
+                                </tr>
+                                <tr>
+                                    <td class="botton-right left-space"><strong>Mental Health Providers</strong></td>
+                                    <td class="botton-right left-space"><a href="https://npiregistry.cms.hhs.gov/" class="external" target="_blank">CMS,
+                                        National Provider Identification (2019)</a></td>
+                                    <td class="botton left-space">Number of mental healthcare providers.</td>
+                                </tr>
+                                <tr>
+                                    <td class="botton-right left-space"><strong>Quality of Care</strong></td>
+                                    <td class="botton-right left-space"><strong>Preventable Hospitalization</strong></td>
+                                    <td class="botton-right left-space"><a href="https://data.cms.gov/mapping-medicare-disparities" class="external"
+                                           target="_blank">Mapping Medicare Disparities Tool (2017)</a></td>
+                                    <td class="botton left-space">Rate of hospital stays for ambulatory-care sensitive conditions per 100,000 Medicare
+                                        enrollees (age-adjusted).
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="3" class="botton-right left-space"><strong>Health Behaviors</strong></td>
+                                    <td class="botton-right left-space"><strong>Smoking</strong></td>
+                                    <td class="botton-right left-space"><a href="https://www.cdc.gov/brfss/annual_data/annual_2017.html" class="external"
+                                           target="_blank">Behavioral Risk Factor Surveillance System (2017)</a></td>
+                                    <td class="botton left-space">Percentage of adults who are current smokers.</td>
+                                </tr>
+                                <tr>
+                                    <td class="botton-right left-space"><strong>Excessive Drinking</strong></td>
+                                    <td class="botton-right left-space"><a href="https://www.cdc.gov/brfss/annual_data/annual_2017.html" class="external"
+                                           target="_blank">Behavioral Risk Factor Surveillance System (2017)</a></td>
+                                    <td class="botton left-space">Percentage of adults reporting binge or heavy drinking during the last 30 days.</td>
+                                </tr>
+                                <tr>
+                                    <td class="botton-right left-space"><strong>Physical Inactivity</strong></td>
+                                    <td class="botton-right left-space"><a href="https://gis.cdc.gov/grasp/diabetes/diabetesatlas.html" class="external"
+                                           target="_blank">United States Diabetes Surveillance System (2016)</a></td>
+                                    <td class="botton left-space">Percentage of adults (age 20 and over) reporting no leisure-time physical
+                                        activity.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2" class="right left-space"><strong>Selected Community Factors</strong></td>
+                                    <td class="botton-right left-space"><strong>Injury Deaths</strong></td>
+                                    <td class="botton-right left-space"><a href="https://wonder.cdc.gov/mortSQL.html" class="external" target="_blank">National
+                                        Center for Health Statistics – Mortality Files (2014-2018)</a></td>
+                                    <td class="botton left-space">Number of deaths due to injury per 100,000 persons.</td>
+                                </tr>
+                                <tr>
+                                    <td class="right left-space"><strong>Severe Housing</strong></td>
+                                    <td class="right left-space"><a href="https://www.huduser.gov/portal/datasets/cp.html" class="external"
+                                           target="_blank">Comprehensive Housing Affordability Strategy (CHAS) data
+                                        (2012-2016)</a></td>
+                                    <td class="left-space">Percentage of households with at least 1 of 4 housing problems: overcrowding, high
+                                        housing costs, lack of kitchen facilities, or lack of plumbing facilities.
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div style="margin: 10px 0 10px 0; text-align: right">
+                            <strong>Data Provider (Release/Access Year):</strong> <a
+                                            href="https://www.countyhealthrankings.org/explore-health-rankings/measures-data-sources/2020-measures"
+                                            target="_blank" class="external">Robert Wood Johnson Foundation & University of Wisconsin Population Health Initiative County Health
+                                        Rankings & Roadmaps program (2020) </a>
+                        </div>
 
-                            <p>The mapping platform was built using an Open Integration model that allows users to integrate their own datasets. To view the three-step process, specific code examples, extensibility files and additional instructions, visit GitHub.</p>
-
-                            <p><a class="external" href="https://github.com/FCC/c2hgis-web/tree/master/Open%20Integration%20Files" target="_blank">View the Open Integration process in GitHub.</a></p>
-
-                            <br/>
-					<!--<h4 style="float: left;">Broadband</h4><span style="float: right;">Data Provider: FCC Form 477, December, 2014 (Version 2 released 3/16/16)</span>-->
-					<h3 class="pull-left">Broadband</h3><div class="pull-right" style="margin: 25px 0 10px 0;"><strong>Data Provider:</strong> <a href="https://opendata.fcc.gov/Wireline/Fixed-Broadband-Deployment-Data-December-2015-Stat/9tdg-7vpy/data" class="external" target="_blank">FCC Form 477, December, 2015</a></div>
-                            <table class="data-source-div-table ">
-                                <thead>
-                                        <th nowrap class="left-space">Measures </th>
-                                        <th nowrap class="left-space">Definition</th>
-                                </thead>
-                                <tbody>                                    
-                                    <tr>
-                                        <td class="botton-right left-space" width="30%">
-                                            <b>Broadband Access</b>
-                                        </td>
-                                        <td class="botton left-space" width="70%">
-                                            Percentage of population with fixed access to the Internet at speeds of 25 megabits per second (mbps) download and 3 mbps upload or higher
-                                        </td>                                     
-                                    </tr>
-                                    <tr>
-                                        <td class="botton-right left-space">
-                                            <b>Rural Access</b>
-                                        </td>
-                                        <td class="botton left-space">
-                                            Percentage of rural population in a county with fixed access to the Internet at speeds of 25 megabits per second (mbps) download and 3 mbps upload or higher
-                                        </td>                                        
-                                    </tr>
-                                    <tr>
-                                        <td class="botton-right left-space">
-                                            <b>Internet Adoption</b>
-                                        </td>
-                                        <td class="botton left-space">
-                                            The number of residential fixed connections to the Internet over 200 kilobits per second (kbps) per 1000 households (as a percentage)
-                                        </td>                                        
-                                    </tr>
-                                    <tr>
-                                        <td class="botton-right left-space">
-                                            <b>Download Speed</b>
-                                        </td>
-                                        <td class="botton left-space">
-                                            Most commonly advertised download speed in an area, where “download speed” is the amount of data in megabits that can be downloaded per second (mbps)
-                                        </td>                                        
-                                    </tr>
-                                    <tr>
-                                        <td class="botton-right left-space">
-                                            <b>Upload Speed</b>
-                                        </td>
-                                        <td class="botton left-space">
-                                            Most commonly advertised upload speed in an area, where “upload speed” is the amount of data in megabits that can be uploaded per second (mbps)
-                                        </td>                                        
-                                    </tr>
-                                    <tr>
-                                        <td class="botton-right left-space">
-                                            <b>Internet Providers</b>
-                                        </td>
-                                        <td class="botton left-space">
-                                            The number of entities providing residential Internet service in a geographic area (i.e., nation, state or county)
-                                        </td>   
-                                    </tr>
-                                       
-                                </tbody>
-                            </table>                            
-                            
-                            <br/>
-                           
-							
-							<h3 class="pull-left">Health</h3><div class="pull-right" style="margin: 25px 0 10px 0;"><strong>Data Provider:</strong> <a href="http://www.countyhealthrankings.org/" class="external" target="_blank">Robert Wood Johnson Foundation’s County Health Rankings & Roadmaps</a></div>
-							
-							
-                            <table class="data-source-div-table">
-                                <thead>
-                                    <th width="15%" nowrap class="left-space">Dimensions</th>
-                                    <th width="15%" nowrap class="left-space">Measures </th>
-                                    <th width="25%" nowrap class="left-space">Definition</th>
-                                    <th width="30%" nowrap class="left-space">Source</th>
-                                    <th width="15%" nowrap class="left-space">National Estimate</th>
-                                </thead>
-                                <tbody>                                    
-                                    <tr>
-                                        <td class="botton-right left-space"><b>Access to Care</b></td>
-                                        <td class="botton-right left-space"><b>Physician Access</b></td>
-                                        <td class="botton-right left-space">Number of primary care physicians per 100,000 people</td>
-                                        <td class="botton-right left-space"><a class="external" href="http://ahrf.hrsa.gov/" target="_blank">Area Health Resource File/ American Medical Association</a></td>
-                                        <td class="botton left-space">75 per 100,000</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="botton-right left-space"><b>Quality of Care</b></td>
-                                        <td class="botton-right left-space"><b>Preventable Hospitalizations</b></td>
-                                        <td class="botton-right left-space">Number of hospitalizations for ambulatory-care sensitive conditions per 1000 Medicare enrollees</td>
-                                        <td class="botton-right left-space"><a class="external" href="http://www.dartmouthatlas.org/" target="_blank">Dartmouth Atlas of Health Care</a></td>
-                                        <td class="botton left-space">50 per 1000</td>
-                                    </tr>                                    
-                                    <tr>
-                                        <td rowspan="5" class="right left-space"><b>Health Behaviors</b></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="botton-right left-space"><b>Sick Days</b></td>
-                                        <td class="botton-right left-space">Average number of physically unhealthy days reported in past 30 days (age-adjusted)</td>
-                                        <td class="botton-right left-space"><a class="external" href="http://www.cdc.gov/brfss/" target="_blank">Behavioral Risk Factor Surveillance System</a></td>
-                                        <td class="botton left-space">3.6 days per month</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="botton-right left-space"><b>Obesity</b></td>
-                                        <td class="botton-right left-space">Percentage of adults reporting a body mass index (BMI) of 30 or more</td>
-                                        <td class="botton-right left-space"><a class="external" href="http://www.cdc.gov/diabetes/atlas/countydata/atlas.html" target="_blank">CDC Diabetes Interactive Atlas</a></td>
-                                        <td class="botton left-space">27.8%</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="botton-right left-space"><b>Diabetes</b></td>
-                                        <td class="botton-right left-space">Percentage of adults reporting a diagnosis of diabetes</td>
-                                        <td class="botton-right left-space"><a class="external" href="http://www.cdc.gov/diabetes/atlas/countydata/atlas.html" target="_blank">CDC Diabetes Interactive Atlas</a></td>
-                                        <td class="botton left-space">9.9%</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="right left-space"><b>Poor/Fair Health</b></td>
-                                        <td class="right left-space">Percentage of adults reporting fair or poor health (age-adjusted)</td>
-                                        <td class="right left-space"><a class="external" href="http://www.cdc.gov/brfss/" target="_blank">Behavioral Risk Factor Surveillance System</a></td>
-                                        <td class="left-space">15%</td>
-                                    </tr>
-                                </tbody>
-                            </table>   
-                            <br/>                                                 
-					</div>
-                </div>                
+                        <h3 class="pull-left">Opioid Mortality and Prescription Rates</h3>
+                        <table class="data-source-div-table">
+                            <thead>
+                                <tr>
+                                    <th class="left-space" style="width: 15%">Dimensions</th>
+                                    <th class="left-space" style="width: 20%">Measures</th>
+                                    <th class="left-space" style="width: 30%">Primary Data (Data Year)</th>
+                                    <th class="left-space" style="width: 35%">Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="10" class="botton-right left-space"><strong>Health Outcomes</strong></td>
+                                    <td class="botton-right left-space"><strong>All Drugs – Death Rate</strong></td>
+                                    <td rowspan="10" class="botton-right left-space"><a
+                                            href="https://wonder.cdc.gov/mcd.html" target="_blank" class="external">Multiple
+                                        Cause of Death 1999-2018 on CDC WONDER Online Database - United States Department of
+                                        Health and Human Services, Center for Disease Control and Prevention, National
+                                        Center for Health Statistics</a>. (2009-2018)
+                                    </td>
+                                    <td class="botton left-space">Mortality rate for all drug-related overdose, represented as deaths per 100,000
+                                        persons.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="botton-right left-space"><strong>All Drugs – Death Rate Trends</strong></td>
+                                    <td class="botton left-space">Percent change in mortality rate (deaths per 100,000 persons) for all drug-related
+                                        overdose.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="botton-right left-space"><strong>All Opioids – Death Rate</strong></td>
+                                    <td class="botton left-space">Mortality rate for all opioid-related overdose, represented as deaths per 100,000
+                                        persons.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="botton-right left-space"><strong>All Opioids – Death Rate Trends</strong></td>
+                                    <td class="botton left-space">Percent change in mortality rate (deaths per 100,000 persons) for all opioid-related
+                                        overdose.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="botton-right left-space"><strong>Prescription Opioids – Death Rate</strong></td>
+                                    <td class="botton left-space">Mortality rate for all prescription opioid overdose, represented as deaths per
+                                        100,000 persons.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="botton-right left-space"><strong>Prescription Opioids – Death Rate Trends</strong></td>
+                                    <td class="botton left-space">Percent change in mortality rate (deaths per 100,000 persons) for all prescription
+                                        opioid overdose.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="botton-right left-space"><strong>Synthetic Opioids – Death Rate</strong></td>
+                                    <td class="botton left-space">Mortality rate for all synthetic opioid overdose, represented as deaths per 100,000
+                                        persons.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="botton-right left-space"><strong>Synthetic Opioids – Death Rate Trends</strong></td>
+                                    <td class="botton left-space">Percent change in mortality rate (deaths per 100,000 persons) for all synthetic
+                                        opioid overdose.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="botton-right left-space"><strong>Heroin – Death Rate</strong></td>
+                                    <td class="botton left-space">Mortality rate for all heroin overdose, represented as deaths per 100,000 persons
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="botton-right left-space"><strong>Heroin – Death Rate Trends</strong></td>
+                                    <td class="botton left-space">Percent change in mortality rate (deaths per 100,000 persons) for all heroin
+                                        overdose.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2" class="right left-space"><strong>Risk Factors</strong></td>
+                                    <td class="botton-right left-space"><strong>Opioids Prescription Rate</strong></td>
+                                    <td rowspan="2" class="right left-space"><a
+                                            href="https://www.cdc.gov/drugoverdose/maps/rxcounty2018.html" target="_blank"
+                                            class="external">U.S. Opioid Dispensing Rate Maps, Centers for Disease Control and Prevention, National Center for Injury Prevention and Control (sourced from IQVIA Xponent
+                                        2006-2018)</a> (2017-2018)
+                                    </td>
+                                    <td class="botton left-space">Rate of retail opioid prescriptions dispensed per 100 persons.</td>
+                                </tr>
+                                <tr>
+                                    <td class="right left-space"><strong>Opioids Prescription Trends</strong></td>
+                                    <td class="left-space">Percent change in opioid prescription rate (retail opioid prescriptions dispensed
+                                        per 100 persons).
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div style="margin: 10px 0 10px 0; text-align: right">
+                            <strong>Data Provider (Release/Access Year):</strong> <a
+                                            href="https://wonder.cdc.gov/mcd.html" target="_blank" class="external">CDC
+                                        WONDER Online Database (2020)</a>; <a
+                                            href="https://www.cdc.gov/drugoverdose/maps/rxcounty2018.html" target="_blank"
+                                            class="external">U.S. Opioid Dispensing Rate Maps, CDC, NCIPC (2020)</a>
+                        </div>
+                        <div style="width: 80%; margin: 0 auto">
+                            <div style="border-top: 1px solid #d2d2d2; margin: 30px 0"></div>
+                        </div>
+                        <p>For <strong>demographics</strong>, we rely on several sources including the U.S. Census Bureau data for population
+                            metrics and selected social and economic factors, as detailed below.</p>
+                        <h3 class="pull-left">Demographics</h3>
+                        <table class="data-source-div-table">
+                            <thead>
+                                <tr>
+                                    <th style="width: 15%">Dimensions</th>
+                                    <th style="width: 20%">Measures</th>
+                                    <th style="width: 30%">Primary Data (Data Year)</th>
+                                    <th style="width: 35%">Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="7" class="botton-right left-space"><strong>Population</strong></td>
+                                    <td class="botton-right left-space"><strong>Population</strong></td>
+                                    <td rowspan="3" class="botton-right left-space"><a
+                                            href="https://www.census.gov/data/tables/time-series/demo/popest/2010s-counties-total.html#par_textimage"
+                                            target="_blank" class="external">U.S. Census Bureau County Population Totals:
+                                        2010-2018</a>; FCC Staff Block Estimates (2018)
+                                    </td>
+                                    <td class="botton left-space">Estimate of the resident population including all people currently residing in the United States.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="botton-right left-space"><strong>Rural</strong></td>
+                                    <td class="botton left-space">Population residing in a rural area (as designated by the U.S. Census Bureau).</td>
+                                </tr>
+                                <tr>
+                                    <td class="botton-right left-space"><strong>Urban</strong></td>
+                                    <td class="botton left-space">Population residing in an urban area (as designated by the U.S. Census Bureau).</td>
+                                </tr>
+                                <tr>
+                                    <td class="botton-right left-space"><strong>Density</strong></td>
+                                    <td class="botton-right left-space"><a href="https://www.fcc.gov/reports-research/reports/broadband-progress-reports/2020-broadband-deployment-report" target="_blank" class="external">FCC 2020 Broadband Deployment Report (2018)</a></td>
+                                    <td class="botton left-space">Population per square mile.</td>
+                                </tr>
+                                <tr>
+                                    <td class="botton-right left-space"><strong>Age (Over 65 Years)</strong></td>
+                                    <td rowspan="1" class="botton-right left-space">County Health Rankings & Roadmaps program (2018)</td>
+                                    <td class="botton left-space">Percentage of the population aged 65 and older according to the U.S. Census Population Estimates.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="botton-right left-space"><strong>Female</strong></td>
+                                    <td rowspan="2" class="botton-right left-space">County Health Rankings & Roadmaps program; U.S. Census Bureau County Population Totals: 2010-2018 (2018)</td>
+                                    <td class="botton left-space">Population that identifies as female according to U.S. Census Population Estimates.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="botton-right left-space"><strong>Male</strong></td>
+                                    <td class="botton left-space">Population that identifies as male according to U.S. Census Population Estimates.</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="3" class="right left-space"><strong>Social & Economic
+                                        Factors</strong></td>
+                                    <td class="botton-right left-space"><strong>Median Household Income</strong></td>
+                                    <td class="botton-right left-space"><a href="https://www.census.gov/newsroom/press-kits/2019/detailed-estimates.html"
+                                           class="external" target="_blank">Small Area Income and Poverty Estimates (SAIPE)</a> (2018)</td>
+                                    <td class="botton left-space">Median household income is the income level at which half of households earn more, and
+                                        half of the households earn less.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="botton-right left-space"><strong>Unemployment</strong></td>
+                                    <td class="botton-right left-space"><a href="https://www.bls.gov/lau/#cntyaa" class="external" target="_blank">Bureau of Labor Statistics</a> (2018)</td>
+                                    <td class="botton left-space">Percentage of the civilian labor force (aged 16 and older) who are unemployed but
+                                        seeking work.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="right left-space"><strong>Education (Attended Some College)</strong></td>
+                                    <td class="right left-space">
+                                        <a href="https://www2.census.gov/programs-surveys/acs/summary_file/2018/data/5_year_entire_sf/"
+                                           class="external" target="_blank">American Community Survey (ACS), 5-Year Estimates</a>
+                                            (2014-2018)</td>
+                                    <td class="left-space">Percentage of adults (aged 25-44) with some post-secondary education.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div style="margin: 10px 0 10px 0; text-align: right">
+                            <strong>Data Provider (Release/Access Year):</strong> <a
+                                            href="https://www.census.gov/data.html" class="external" target="_blank">U.S. Census Bureau
+                                        (2020)</a>; <a
+                                            href="https://www.countyhealthrankings.org/explore-health-rankings/measures-data-sources/2020-measures"
+                                            class="external" target="_blank">Robert Wood Johnson Foundation & University of Wisconsin Population Health Initiative County Health Rankings &
+                            Roadmaps (2020)</a>; <a href="https://www.fcc.gov/reports-research/reports/broadband-progress-reports/2020-broadband-deployment-report" target="_blank" class="external">FCC 2020 Broadband Deployment Report (2020)</a>; FCC Staff Block Estimates (2020)
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
         <a class="sr-only" id="skiptarget3" tabindex="-1"></a>
         <footer class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="nav-footer">
-                            <div class="footergriditems">
-                                <div class="grid-item">
-                                    <address>
-                                        Federal Communications Commission
-                                        <br>45 L Street NE
-                                        <br>Washington, DC 20554
-                                    </address>
-                                    <br>
-                                    <ul class="footermenu footermenu__phone">
-                                        <li><a class="phone-link" href="tel:+18882255322">Phone: 1-888-225-5322</a></li>
-                                        <li><a class="phone-link" href="tel:+18444322275">ASL Video Call: 1-844-432-2275</a></li>
-                                        <li><a class="phone-link" href="https://www.fcc.gov/ASLCallPortal">ASL Video Call: Web</a></li>
-                                        <li><a class="phone-link" href="tel:+18664180232">Fax: 1-866-418-0232</a></li>
-                                        <li><a class="contactus" href="https://www.fcc.gov/about/contact">Contact Us</a></li>
-                                    </ul>
-                                    <ul class="socialmediaicons">
-                                        <li><a class="link-ext social-media twitter" href="https://twitter.com/fcc">Twitter</a></li>
-                                        <li><a class="link-ext social-media facebook" href="https://www.facebook.com/FCC">Facebook</a></li>
-                                        <li><a class="link-ext social-media youtube" href="https://www.youtube.com/fcc">Youtube</a></li>
-                                        <li><a class="link-ext social-media instagram" href="https://www.instagram.com/fcc">Instagram</a></li>
-                                    </ul>
-                                </div>
-                                <div class="grid-item">
-                                    <ul class="footermenu footermenu__categories">
-                                        <li><a href="https://www.fcc.gov/general/website-notices">Website Policies &amp; Notices</a></li>
-                                        <li><a href="https://www.fcc.gov/general/foia-0">FOIA</a></li>
-                                        <li><a href="https://www.fcc.gov/general/no-fear-act-data">No Fear Act Data</a></li>
-                                        <li><a href="https://www.fcc.gov/digitalstrategy">FCC Digital Strategy</a></li>
-                                        <li><a href="https://www.fcc.gov/general/open-government-fcc">Open Government Directive</a></li>
-                                        <li><a href="https://www.fcc.gov/general/plain-writing-fcc">Plain Writing Act</a></li>
-                                        <li><a href="https://www.fcc.gov/general/rss-feeds-and-email-updates-fcc">RSS Feeds &amp; Email Updates</a></li>
-                                        <li><a href="https://www.fcc.gov/general/disability-rights-office">Disability Rights</a></li>
-                                    </ul>
-                                </div>
-                                <div class="grid-item">
-                                    <ul class="footermenu footermenu__categories">
-                                        <li>CATEGORIES</li>
-                                        <li><a href="https://www.fcc.gov/about/overview">About the FCC</a></li>
-                                        <li><a href="https://www.fcc.gov/proceedings-actions">Proceedings &amp; Actions</a></li>
-                                        <li><a href="https://www.fcc.gov/licensing">Licensing &amp; Databases</a></li>
-                                        <li><a href="https://www.fcc.gov/reports-research">Reports &amp; Research</a></li>
-                                        <li><a href="https://www.fcc.gov/news-events">News &amp; Events</a></li>
-                                        <li><a href="https://www.fcc.gov/consumers">For Consumers</a></li>
-                                    </ul>
-                                </div>
-                                <div class="grid-item">
-                                    <ul class="footermenu footermenu__bureaus">
-                                        <li>BUREAUS &amp; OFFICES</li>
-                                        <li><a href="https://www.fcc.gov/consumer-and-governmental-affairs#block-menu-block-4">Consumer</a></li>
-                                        <li><a href="https://www.fcc.gov/enforcement#block-menu-block-4">Enforcement</a></li>
-                                        <li><a href="https://www.fcc.gov/inspector-general">Inspector General</a></li>
-                                        <li><a href="https://www.fcc.gov/international#block-menu-block-4">International</a></li>
-                                        <li><a href="https://www.fcc.gov/media#block-menu-block-4">Media</a></li>
-                                        <li><a href="https://www.fcc.gov/public-safety-and-homeland-security#block-menu-block-4">Public Safety</a></li>
-                                        <li><a href="https://www.fcc.gov/wireless-telecommunications#block-menu-block-4">Wireless</a></li>
-                                        <li><a href="https://www.fcc.gov/wireline-competition#block-menu-block-4">Wireline</a></li>
-                                        <li><a href="https://www.fcc.gov/offices-bureaus#block-menu-block-4">Offices</a></li>
-                                    </ul>
-                                </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="nav-footer">
+                        <div class="footergriditems">
+                            <div class="grid-item">
+                                <address>
+                                    Federal Communications Commission
+                                    <br>45 L Street NE
+                                    <br>Washington, DC 20554
+                                </address><br>
+                                <ul class="footermenu footermenu__phone">
+                                    <li><a class="phone-link" href="tel:+18882255322">Phone: 1-888-225-5322</a></li>
+                                    <li><a class="phone-link" href="tel:+18444322275">ASL Video Call: 1-844-432-2275</a></li>
+                                    <li><a class="phone-link" href="https://www.fcc.gov/ASLCallPortal">ASL Video Call: Web</a></li>
+                                    <li><a class="phone-link" href="tel:+18664180232">Fax: 1-866-418-0232</a></li>
+                                    <li><a class="contactus" href="https://www.fcc.gov/about/contact">Contact Us</a></li>
+                                </ul>
+                                <ul class="socialmediaicons">
+                                    <li><a class="link-ext social-media twitter" href="https://twitter.com/fcc">Twitter</a></li>
+                                    <li><a class="link-ext social-media facebook" href="https://www.facebook.com/FCC">Facebook</a></li>
+                                    <li><a class="link-ext social-media youtube" href="https://www.youtube.com/user/fccdotgovvideo">Youtube</a></li>
+                                    <li><a class="link-ext social-media instagram" href="https://www.instagram.com/fcc">Instagram</a></li>
+                                </ul>
                             </div>
-                            <div class="fcc-seal">
-                                Federal Communications Commission
+                            <div class="grid-item">
+                                <ul class="footermenu footermenu__categories">
+                                    <li><a href="https://www.fcc.gov/general/website-notices">Website Policies &amp; Notices</a></li>
+                                    <li><a href="https://www.fcc.gov/general/foia-0">FOIA</a></li>
+                                    <li><a href="https://www.fcc.gov/general/no-fear-act-data">No Fear Act Data</a></li>
+                                    <li><a href="https://www.fcc.gov/digitalstrategy">FCC Digital Strategy</a></li>
+                                    <li><a href="https://www.fcc.gov/general/open-government-fcc">Open Government Directive</a></li>
+                                    <li><a href="https://www.fcc.gov/general/plain-writing-fcc">Plain Writing Act</a></li>
+                                    <li><a href="https://www.fcc.gov/general/rss-feeds-and-email-updates-fcc">RSS Feeds &amp; Email Updates</a></li>
+                                    <li><a href="https://www.fcc.gov/general/disability-rights-office">Disability Rights</a></li>
+                                </ul>
                             </div>
+                            <div class="grid-item">
+                                <ul class="footermenu footermenu__categories">
+                                    <li>CATEGORIES</li>
+                                    <li><a href="https://www.fcc.gov/about/overview">About the FCC</a></li>
+                                    <li><a href="https://www.fcc.gov/proceedings-actions">Proceedings &amp; Actions</a></li>
+                                    <li><a href="https://www.fcc.gov/licensing">Licensing &amp; Databases</a></li>
+                                    <li><a href="https://www.fcc.gov/reports-research">Reports &amp; Research</a></li>
+                                    <li><a href="https://www.fcc.gov/news-events">News &amp; Events</a></li>
+                                    <li><a href="https://www.fcc.gov/consumers">For Consumers</a></li>
+                                </ul>
+                            </div>
+                            <div class="grid-item">
+                                <ul class="footermenu footermenu__bureaus">
+                                    <li>BUREAUS &amp; OFFICES</li>
+                                    <li><a href="https://www.fcc.gov/consumer-and-governmental-affairs#block-menu-block-4">Consumer</a></li>
+                                    <li><a href="https://www.fcc.gov/enforcement#block-menu-block-4">Enforcement</a></li>
+                                    <li><a href="https://www.fcc.gov/inspector-general">Inspector General</a></li>
+                                    <li><a href="https://www.fcc.gov/international#block-menu-block-4">International</a></li>
+                                    <li><a href="https://www.fcc.gov/media#block-menu-block-4">Media</a></li>
+                                    <li><a href="https://www.fcc.gov/public-safety-and-homeland-security#block-menu-block-4">Public Safety</a></li>
+                                    <li><a href="https://www.fcc.gov/wireless-telecommunications#block-menu-block-4">Wireless</a></li>
+                                    <li><a href="https://www.fcc.gov/wireline-competition#block-menu-block-4">Wireline</a></li>
+                                    <li><a href="https://www.fcc.gov/offices-bureaus#block-menu-block-4">Offices</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="fcc-seal">
+                            Federal Communications Commission
                         </div>
                     </div>
                 </div>
-            </footer>
+            </div>
+        </footer>
     </div>
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/jquery-ui.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap-toolkit.min.js"></script>
-
-    
-
-    <script src="js/chart.js"></script>
-    
-    <!--<script src="./js/jquery.jcarousel.min.js"></script>
-    <script src="./js/jcarousel.responsive.js"></script>-->
-    <script src="js/jquery-color-animation-mainfile.js"></script>   
-    <script src="js/theme.js"></script>
-    <!-- END CODE FOR DEMO ONLY! DO NOT USE! -->
-
-
-
-</body></html>
+    <script src="js/theme.js"></script>    
+</body>
+</html>

@@ -9,655 +9,618 @@
 */
 
 var insight_ly = {
-	broadband: {
-		in_bb_access: {
-			column: 'pctpopwbbacc',
-			unit: 'perc',
-			min: 0,
-			max: 100,
-			multiple: 1,
-			zindex: 99,
-			step: 5,
-			values: [90, 100],
-			label: '% Coverage',
-			tooltip: 'Percent of population with access to fixed broadband service at 25/3 mbps or higher advertised speeds.',
-			name: 'Broadband Access',
-			suffix: '%'
-		},	
-		in_bb_rural_access: {
-			column: 'bpr_ruralpctwaccess',
-			unit: 'perc',
-			min: 0,
-			max: 100,
-			multiple: 1,
-			zindex: 99,
-			step: 5,
-			values: [90, 100],
-			label: '% Coverage',
-			tooltip: 'Percent of rural population with access to fixed broadband service at 25/3 mbps or higher advertised speeds.',
-			name: 'Rural Access',
-			suffix: '%'
-		},
-		in_bb_in_adoption: {
-			column: 'res_concxns_pct',
-			unit: 'perc',
-			min: 0,
-			max: 5,
-			multiple: 20,
-			zindex: 99,
-			step: 1,
-			values: [4, 5],
-			label: '% Coverage',
-			tooltip: 'Percent of households with fixed connections over 200 kbps.',
-			name: 'Internet Adoption',
-			suffix: '%'
-		},		
-		in_bb_wn_access: {
-			column: 'wireline_advdl_gr25000k',
-			unit: 'perc',
-			min: 0,
-			max: 100,
-			multiple: 1,
-			zindex: 99,
-			step: 5,
-			values: [75, 100],
-			label: '% Coverage',
-			tooltip: 'Percent of population with access to 25 mbps advertised wireline download speeds.',
-			name: 'Wireline Access',
-			suffix: '%'
-		},
-		in_bb_ws_access: {
-			column: 'wireless_advdl_gr25000k',
-			unit: 'perc',
-			min: 0,
-			max: 100,
-			multiple: 1,
-			zindex: 99,
-			step: 5,
-			values: [75, 100],
-			label: '% Coverage',
-			tooltip: 'Percent of population with access to 25 mbps advertised wireless download speeds.',
-			name: 'Wireless Access',
-			suffix: '%'
-		},
-		in_bb_dl_speed: {
-			column: 'dl_tiers',
-			unit: 'st',
-			min: 6,
-			max: 10,
-			multiple: 1,
-			zindex: 99,
-			step: 1,
-			values: [9, 10],
-			label: 'Download',
-			tooltip: 'Most commonly advertised maximum download speed.',
-			name: 'Download Speed',
-			suffix: 'mbps'
-		},
-		in_bb_ul_speed: {
-			column: 'ul_tiers',
-			unit: 'st',
-			min: 1,
-			max: 10,
-			multiple: 1,
-			zindex: 99,
-			step: 1,
-			values: [9, 10],
-			label: 'Upload',
-			tooltip: 'Most commonly advertised maximum upload speed.',
-			name: 'Upload Speed',
-			suffix: 'mbps'
-		}		
-	},
-	health: {
-		in_pcp_access: {
-			column: 'pcp_per_capita',
-			unit: 'p100000',
-			min: 0,
-			max: 0.005,
-			multiple: 100000,
-			zindex: 90,
-			step: 0.0002,
-			values: [0.00000, 0.00080],
-			label: ' Physicians',
-			tooltip: 'Primary Care Physicians per 100,000 people.',
-			name: 'Physician Access',
-			suffix: 'per 100,000'
-		},
-		in_prm_death: {
-			column: 'years_lost_per_100000',
-			unit: 'y100000',
-			min: 2500,
-			max: 20000,
-			multiple: 1,
-			zindex: 90,
-			step: 100,
-			values: [7500, 15000],
-			label: ' Years',
-			tooltip: 'Number of years lost due to premature death before age 75 per 100,000 people.',
-			name: 'Premature Death',
-			suffix: 'per 100,000'
-		},
-		in_prv_hosp: {
-			column: 'preventable_hospital_stays_per_1000',
-			unit: 'p1000',
-			min: 0,
-			max: 270,
-			multiple: 1,
-			zindex: 90,
-			step: 10,
-			values: [60, 270],
-			label: ' Hospital Stays',
-			tooltip: 'Number of preventable hospital stays per 1,000 people.',
-			name: 'Preventable Hospital',
-			suffix: 'per 1,000'
-		},
-		in_inj_death: {
-			column: 'injury_deaths_per_100000',
-			unit: 'p1000000',
-			min: 0,
-			max: 200,
-			multiple: 1,
-			zindex: 90,
-			step: 10,
-			values: [70, 100],
-			label: ' Injury Deaths',
-			tooltip: 'Number of deaths due to injury per 100,000 population.',
-			name: 'Injury Deaths',
-			suffix: 'per 100,000'
-		},
-		in_sick_days: {
-			column: 'poor_physical_health_days_within_last_30_days',
-			unit: 'days',
-			min: 1,
-			max: 10,
-			multiple: 1,
-			zindex: 90,
-			step: 0.5,
-			values: [4, 10],
-			label: ' Sick Days',
-			tooltip: 'Average number of physically unhealthy days reported in past 30 days (age-adjusted).',
-			name: 'Sick Days',
-			suffix: 'days'
-		},
-		in_obs_rate: {
-			column: 'adult_obesity_pct',
-			unit: 'perc',
-			min: 0,
-			max: 50,
-			multiple: 1,
-			zindex: 90,
-			step: 5,
-			values: [30, 50],
-			label: '% Obesity',
-			tooltip: 'Percentage of adults that report a BMI of 30 or more.',
-			name: 'Obesity Rate',
-			suffix: '%'
-		},
-		in_long_commute: {
-			column: 'long_commute_driving_alone',
-			unit: 'perc',
-			min: 0,
-			max: 70,
-			multiple: 1,
-			zindex: 90,
-			step: 5,
-			values: [35, 50],
-			label: '% Commuters',
-			tooltip: 'Among workers who commute in their car alone, the percentage that commute more than 30 minutes.',
-			name: 'Long Commute',
-			suffix: '%'
-		},
-		in_driving_alone: {
-			column: 'driving_alone_to_work',
-			unit: 'perc',
-			min: 0,
-			max: 100,
-			multiple: 1,
-			zindex: 90,
-			step: 10,
-			values: [80, 100],
-			label: '% Alone',
-			tooltip: 'Percentage of the workforce that drives alone to work.',
-			name: 'Driving Alone',
-			suffix: '%'
-		},
-		in_diabetes_rate: {
-			column: 'diabetes_pct',
-			unit: 'perc',
-			min: 0,
-			max: 22,
-			multiple: 1,
-			zindex: 90,
-			step: 2,
-			values: [10, 22],
-			label: '% Diabetes',
-			tooltip: 'Percentage of adults with diabetes.',
-			name: 'Diabetes Rate',
-			suffix: '%'
-		},
-		in_smoking_rate: {
-			column: 'smoking_pct',
-			unit: 'perc',
-			min: 0,
-			max: 50,
-			multiple: 1,
-			zindex: 90,
-			step: 5,
-			values: [20, 50],
-			label: '% Smoking',
-			tooltip: 'Percentage of adults who are current smokers.',
-			name: 'Smoking Rate',
-			suffix: '%'
-		},
-		in_drinking_rate: {
-			column: 'drinking_pct',
-			unit: 'perc',
-			min: 0,
-			max: 50,
-			multiple: 1,
-			zindex: 90,
-			step: 5,
-			values: [15, 50],
-			label: '% Drunk',
-			tooltip: 'Percentage of adults reporting binge or heavy drinking.',
-			name: 'Excessive Drinking',
-			suffix: '%'
-		},
-		in_phys_inactivity: {
-			column: 'physical_inactivity',
-			unit: 'perc',
-			min: 0,
-			max: 50,
-			multiple: 1,
-			zindex: 90,
-			step: 5,
-			values: [25, 50],
-			label: '% Inactive',
-			tooltip: 'Percentage of adults aged 20 and over reporting no leisure-time physical activity.',
-			name: 'Physical Inactivity',
-			suffix: '%'
-		},
-		in_severe_housing: {
-			column: 'severe_housing_problems',
-			unit: 'perc',
-			min: 0,
-			max: 50,
-			multiple: 1,
-			zindex: 90,
-			step: 5,
-			values: [20, 50],
-			label: '% Severe',
-			tooltip: 'Percentage of households with at least 1 of 4 housing problems: overcrowding, high housing costs, or lack of kitchen or plumbing facilities.',
-			name: 'Severe Housing',
-			suffix: '%'
-		},
-		in_poorfair: {
-			column: 'poor_fair_health_pct',
-			unit: 'perc',
-			min: 0,
-			max: 52,
-			multiple: 1,
-			zindex: 90,
-			step: 2,
-			values: [16, 52],
-			label: '% Poor/Fair',
-			tooltip: 'Percentage of adults reporting fair or poor health (age-adjusted).',
-			name: 'Poor/Fair Health',
-			suffix: '%'			
-		}
-	},	
-	count: {
-		in_cnt_pcp: {
-			layer: 'c2hgis',
-			column: 'pcp_total',
-			style: 'pcp',
-			color: '#ba0c0c',
-			county: {
-				min: 10,
-				max: 500
-			}, 
-			state: {
-				min: '1,000',
-				max: '10,000'
-			},
-			name: 'Physicians',
-			suffix: ''
-		},
-		in_cnt_ip: {
-			layer: 'c2hgis',
-			column: 'provcount_c',
-			style: 'ip',
-			color: '#0050cc',
-			county: {
-				min: 1,
-				max: 25
-			}, 
-			state: {
-				min: 25,
-				max: 100
-			},
-			name: 'Internet Providers',
-			suffix: ''
-		},
-		in_cnt_pop: {
-			layer: 'c2hgis',
-			column: 'pop_2014',
-			style: 'pop',
-			color: '#05ad28',
-			county: {
-				min: '10,000',
-				max: '1&nbsp;million'
-			}, 
-			state: {
-				min: '1&nbsp;million',
-				max: '10&nbsp;million'
-			},
-			name: 'Population',
-			suffix: ''
-		},
-		in_cnt_tele: {
-			layer: 'c2hgis_telehealth',
-			column: 'telehealth_beneficiary_total',
-			style: 'telehealth',
-			color: '#9d5978',
-			county: {
-				min: '10',
-				max: '100'
-			}, 
-			state: {
-				min: '10',
-				max: '100'
-			},
-			name: 'Telehealth',
-			suffix: ' beneficiaries'
-		}
-	}
+    broadband: {
+        in_bb_access: {
+            name: 'Broadband Access',
+            column: 'pctpopwbbacc',
+            min: 0,
+            max: 100,
+            zindex: 99,
+            step: .1,
+            values: [0, 94.4],
+            label: '% Coverage',
+            tooltip: 'Percent of population with access to fixed broadband service at 25/3 mbps or higher advertised speeds, 2018.',
+            slider: []
+        },
+        in_bb_rural_access: {
+            name: 'Rural Access',
+            column: 'bpr_ruralpctwaccess',
+            min: 0,
+            max: 100,
+            zindex: 99,
+            step: .1,
+            values: [0, 77.7],
+            label: '% Coverage',
+            tooltip: 'Percent of rural population with access to fixed broadband service at 25/3 mbps or higher advertised speeds, 2018.',
+            slider: []
+        },
+        in_bb_in_adoption: {
+            name: 'Internet Adoption',
+            column: 'subscription_ratio',
+            min: 0,
+            max: 330,
+            zindex: 99,
+            step: 1,
+            values: [0, 84],
+            label: ' Connections',
+            tooltip: 'Subscribership ratio: number of fixed connections over 200kbps per 100 households, 2018.',
+            slider: []
+        },
+        in_bb_dl_speed: {
+            name: 'Download Speed',
+            column: 'dl_tiers',
+            min: 0,
+            max: 11,
+            zindex: 99,
+            step: 1,
+            values: [0, 7],
+            label: 'Download',
+            tooltip: 'Most commonly advertised maximum download speed tier, 2018.',
+            slider: []
+        },
+        in_bb_ul_speed: {
+            name: 'Upload Speed',
+            column: 'ul_tiers',
+            min: 0,
+            max: 11,
+            zindex: 99,
+            step: 1,
+            values: [0, 2],
+            label: 'Upload',
+            tooltip: 'Most commonly advertised maximum upload speed tier, 2018.',
+            slider: []
+        },
+        in_bb_in_adoption_choro: {
+            column: 'res_concxns_choro'
+        }
+    },
+    health: {
+        in_diabetes_rate: {
+            name: 'Diabetes Rate',
+            column: 'diabetes_pct',
+            min: 0,
+            max: 34.1,
+            zindex: 90,
+            step: .1,
+            values: [0, 10.3],
+            label: '% Diabetes',
+            tooltip: 'Percentage of adults with diabetes.',
+            slider: []
+        },
+        in_obs_rate: {
+            name: 'Obesity Rate',
+            column: 'adult_obesity_pct',
+            min: 0,
+            max: 57.7,
+            zindex: 90,
+            step: .1,
+            values: [0, 29],
+            label: '% Obesity',
+            tooltip: 'Percentage of adults that report a BMI of 30 or more.',
+            slider: []
+        },
+        in_pcp_access: {
+            name: 'Physician Access',
+            column: 'pcp_rate_per_100000',
+            min: 0,
+            max: 515.4,
+            zindex: 90,
+            step: .1,
+            values: [0, 75.1],
+            label: ' Physicians',
+            tooltip: 'Primary Care Physicians per 100,000 people.',
+            slider: []
+        },
+        in_poorfair: {
+            name: 'Poor/Fair Health',
+            column: 'poor_fair_health_pct',
+            min: 0,
+            max: 41,
+            zindex: 90,
+            step: .1,
+            values: [0, 17.2],
+            label: '% Poor/Fair',
+            tooltip: 'Percentage of adults reporting fair or poor health (age-adjusted).',
+            slider: []
+        },
+        in_prv_hosp: {
+            name: 'Preventable Hospitalization',
+            column: 'preventable_hospital_stays_per_100000',
+            min: 0,
+            max: 16855,
+            zindex: 90,
+            step: 5,
+            values: [0, 4535],
+            label: ' Stays',
+            tooltip: 'Rate of hospital stays for ambulatory-care sensitive conditions per 100,000 Medicare enrollees.',
+            slider: []
+        },
+        in_sick_days: {
+            name: 'Sick Days',
+            column: 'poor_physical_health_days_within_last_30_days',
+            min: 0,
+            max: 7.11,  // true max is 7.1. Due to slider bug, set to 7.11
+            zindex: 90,
+            step: .1,
+            values: [0, 3.8],
+            label: ' Sick Days',
+            tooltip: 'Average number of physically unhealthy days reported in past 30 days (age-adjusted).',
+            suffix: 'days',
+            slider: []
+        }
+    },
+    opioid: {
+        in_alldrugs_age_adj_mortality_rate: {
+            name: 'All Drug Deaths',
+            column: 'alldrugs_age_adj_mortality_rate',
+            zindex: 90,
+            label: ' Deaths per 100,000',
+            tooltip: 'Average, age-adjusted mortality rate from all drug-related overdoses, 2014-2018.',
+            stateMin: 7.2,
+            stateMax: 47.6,
+            countyMin: 3.6,
+            countyMax: 113.6,
+            slider: {county: [], state: []}
+        },
+        in_alldrugs_age_adj_mortality_rate_pct_change: {
+            name: 'All Drug Death Trends',
+            column: 'alldrugs_age_adj_mortality_rate_pct_change',
+            zindex: 90,
+            label: ' in Death Rate',
+            tooltip: 'Percent change in average, age-adjusted mortality rate from all drug-related overdoses, 2009-2018.',
+            stateMin: -9.5,
+            stateMax: 190.3,
+            countyMin: -65.7,
+            countyMax: 287.6,
+            slider: {county: [], state: []}
+        },
+        in_anyopioids_age_adj_mortality_rate: {
+            name: 'All Opioid Deaths',
+            column: 'anyopioids_age_adj_mortality_rate',
+            zindex: 90,
+            label: ' Deaths per 100,000',
+            tooltip: 'Average, age-adjusted mortality rate from all opioid-related overdoses, 2014-2018.',
+            stateMin: 3,
+            stateMax: 40.5,
+            countyMin: 1.2,
+            countyMax: 104,
+            slider: {county: [], state: []}
+        },
+        in_anyopioids_age_adj_mortality_rate_pct_change: {
+            name: 'All Opioid Death Trends',
+            column: 'anyopioids_age_adj_mortality_rate_pct_change',
+            zindex: 90,
+            label: ' in Death Rate',
+            tooltip: 'Percent change in average, age-adjusted mortality rate from all opioid-related overdoses, 2009-2018.',
+            stateMin: -29,
+            stateMax: 262.5,
+            countyMin: -59.3,
+            countyMax: 917.6,
+            slider: {county: [], state: []}
+        },
+        in_prescriptionopioids_age_adj_mortality_rate: {
+            name: 'Rx Opioid Deaths',
+            column: 'prescriptionopioids_age_adj_mortality_rate',
+            zindex: 90,
+            label: ' Deaths per 100,000',
+            tooltip: 'Average, age-adjusted mortality rate from all prescription opioid overdoses, 2014-2018.',
+            stateMin: 2,
+            stateMax: 18.6,
+            countyMin: 0.9,
+            countyMax: 52.8,
+            slider: {county: [], state: []}
+        },
+        in_prescriptionopioids_age_adj_mortality_rate_pct_change: {
+            name: 'Rx Opioid Death Trends',
+            column: 'prescriptionopioids_age_adj_mortality_rate_pct_change',
+            zindex: 90,
+            label: ' in Death Rate',
+            tooltip: 'Percent change in average, age-adjusted mortality rate from all prescription opioid overdoses, 2009-2018.',
+            stateMin: -50.9,
+            stateMax: 180,
+            countyMin: -75.5,
+            countyMax: 390.9,
+            slider: {county: [], state: []}
+        },
+        in_syntheticopioids_age_adj_mortality_rate: {
+            name: 'Synthetic Opioid Deaths',
+            column: 'syntheticopioids_age_adj_mortality_rate',
+            zindex: 90,
+            label: ' Deaths per 100,000',
+            tooltip: 'Average, age-adjusted mortality rate from all synthetic opioid overdoses, 2014-2018.',
+            stateMin: 0.7,
+            stateMax: 25.7,
+            countyMin: 0.4,
+            countyMax: 75.3,
+            slider: {county: [], state: []}
+        },
+        in_syntheticopioids_age_adj_mortality_rate_pct_change: {
+            name: 'Synthetic Opioid Death Trends',
+            column: 'syntheticopioids_age_adj_mortality_rate_pct_change',
+            zindex: 90,
+            label: ' in Death Rate',
+            tooltip: 'Percent change in average, age-adjusted mortality rate from all synthetic opioid overdoses, 2009-2018.',
+            stateMin: -26.7,
+            stateMax: 3433.3,
+            countyMin: -27.3,
+            countyMax: 4290,
+            slider: {county: [], state: []}
+        },
+        in_heroin_age_adj_mortality_rate: {
+            name: 'Heroin Deaths',
+            column: 'heroin_age_adj_mortality_rate',
+            zindex: 90,
+            label: ' Deaths per 100,000',
+            tooltip: 'Average, age-adjusted mortality rate  from all heroin overdoses, 2014-2018.',
+            stateMin: 0.3,
+            stateMax: 12.7,
+            countyMin: 0.5,
+            countyMax: 50.2,
+            slider: {county: [], state: []}
+        },
+        in_heroin_age_adj_mortality_rate_pct_change: {
+            name: 'Heroin Death Trends',
+            column: 'heroin_age_adj_mortality_rate_pct_change',
+            zindex: 90,
+            label: ' in Death Rate',
+            tooltip: 'Percent change in average, age-adjusted mortality rate from all heroin overdoses, 2009-2018.',
+            stateMin: 3.3,
+            stateMax: 716.7,
+            countyMin: -41.5,
+            countyMax: 860,
+            slider: {county: [], state: []}
+        },
+        in_opioid_prescribing_rate: {
+            name: 'Rx Rates',
+            column: 'opioid_prescribing_rate',
+            zindex: 90,
+            label: ' Rx per 100',
+            tooltip: 'Opioid prescribing patterns (rate of retail opioid prescriptions dispensed per 100 persons), 2018.',
+            stateMin: 25,
+            stateMax: 97.5,
+            countyMin: 0,
+            countyMax: 311.3,
+            slider: {county: [], state: []}
+        },
+        in_opioid_prescribing_rate_pct_change: {
+            name: 'Rx Trends',
+            column: 'opioid_prescribing_rate_pct_change',
+            zindex: 90,
+            label: ' in Rx Rate',
+            tooltip: 'Percent change in opioid prescribing patterns (percent change in rate of retail opioid prescriptions dispensed per 100 persons), 2017-2018.',
+            stateMin: -24,
+            stateMax: -7.9,
+            countyMin: -100,
+            countyMax: 6125,
+            slider: {county: [], state: []}
+        }
+    },
+    // Broadband tab > opioid filter slider - user setting
+    bbOpioid: {
+        in_alldrugs_age_adj_mortality_rate: {
+            slider: {county: [], state: []}
+        },
+        in_alldrugs_age_adj_mortality_rate_pct_change: {
+            slider_allTrends: {county: [], state: []},
+            slider_decreasing: {county: [], state: []},
+            slider_increasing: {county: [], state: []}
+        },
+        in_anyopioids_age_adj_mortality_rate: {
+            slider: {county: [], state: []}
+        },
+        in_anyopioids_age_adj_mortality_rate_pct_change: {
+            slider_allTrends: {county: [], state: []},
+            slider_decreasing: {county: [], state: []},
+            slider_increasing: {county: [], state: []}
+        },
+        in_prescriptionopioids_age_adj_mortality_rate: {
+            slider: {county: [], state: []}
+        },
+        in_prescriptionopioids_age_adj_mortality_rate_pct_change: {
+            slider_allTrends: {county: [], state: []},
+            slider_decreasing: {county: [], state: []},
+            slider_increasing: {county: [], state: []}
+        },
+        in_syntheticopioids_age_adj_mortality_rate: {
+            slider: {county: [], state: []}
+        },
+        in_syntheticopioids_age_adj_mortality_rate_pct_change: {
+            slider_allTrends: {county: [], state: []},
+            slider_decreasing: {county: [], state: []},
+            slider_increasing: {county: [], state: []}
+        },
+        in_heroin_age_adj_mortality_rate: {
+            slider: {county: [], state: []}
+        },
+        in_heroin_age_adj_mortality_rate_pct_change: {
+            slider_allTrends: {county: [], state: []},
+            slider_decreasing: {county: [], state: []},
+            slider_increasing: {county: [], state: []}
+        },
+        in_opioid_prescribing_rate: {
+            slider: {county: [], state: []}
+        },
+        in_opioid_prescribing_rate_pct_change: {
+            slider_allTrends: {county: [], state: []},
+            slider_decreasing: {county: [], state: []},
+            slider_increasing: {county: [], state: []}
+        },
+    },
+    // Data overlays
+    count: {
+        in_cnt_pcp: {
+            name: 'Physicians',
+            layer: 'c2hgis',
+            column: 'pcp_total',
+            style: 'pcp',
+            color: '#ba0c0c',
+            county: {
+                min: 10,
+                max: 500
+            },
+            state: {
+                min: '1,000',
+                max: '10,000'
+            }
+        },
+        in_cnt_ip: {
+            name: 'Internet Providers',
+            layer: 'c2hgis',
+            column: 'provcount_c',
+            style: 'ip',
+            color: '#0050cc',
+            county: {
+                min: 1,
+                max: 15
+            },
+            state: {
+                min: 10,
+                max: 150
+            }
+        },
+        in_cnt_pop: {
+            name: 'Population',
+            layer: 'c2hgis',
+            column: 'population',
+            style: 'pop',
+            color: '#05ad28',
+            county: {
+                min: '10,000',
+                max: '1&nbsp;million'
+            },
+            state: {
+                min: '1&nbsp;million',
+                max: '10&nbsp;million'
+            }
+        }
+    }
 };
 
+// Health > Chronic disease > Health measures choropleth
 var health_ly = {
-	hh_pcppc: {
-		column: 'pcp_per_capita',
-		style: 'health_sec_pcpacc',
-		unit: 'p100000',
-		min: '>90',
-		max: '<60',
-		ranges: '>90,80-90,70-80,60-70,<60',
-		label: 'PCP/100,000',
-		tooltip: 'Primary Care Physicians per 100,000 people.'
-	},
-	hh_poorfair: {
-		column: 'poor_fair_health_pct',
-		style: 'health_sec_poorfair',
-		unit: 'perc',
-		min: '<10',
-		max: '>17.5',
-		ranges: '<10,10-12.5,12.5-15,15-17.5,>17.5',
-		label: '% Poor/Fair Health',
-		tooltip: 'Percentage of adults reporting fair or poor health (age-adjusted).'
-	},
-	hh_obesity: {
-		column: 'adult_obesity_pct',
-		style: 'health_sec_obesity',
-		unit: 'perc',
-		min: '<25',
-		max: '>32.5',
-		ranges: '<25,25-27.5,27.5-30,30-32.5,>32.5',
-		label: '% Obesity',
-		tooltip: 'Percentage of adults that report a BMI of 30 or more.'
-	},
-	hh_prematured: {
-		column: 'years_lost_per_100000',
-		style: 'health_sec_prematured',
-		unit: 'y100000',
-		min: '<5,000',
-		max: '>8,000',
-		ranges: '<5,000,*,*,*,>8,000',
-		label: '# Years Lost',
-		tooltip: 'Number of years lost due to premature death before age 75 per 100,000 people.'
-	},
-	hh_preventhosp: {
-		column: 'preventable_hospital_stays_per_1000',
-		style: 'health_sec_preventhosp',
-		unit: 'p1000',
-		min: '<50',
-		max: '>70',
-		ranges: '<50,50-57,57-62,62-70,>70',
-		label: '# Hospital Stays',
-		tooltip: 'Number of preventable hospital stays per 1,000 people.'
-	},
-	hh_sick_days: {
-		column: 'poor_physical_health_days_within_last_30_days',
-		style: 'health_sec_sickdays',
-		unit: 'days',
-		min: '<3',
-		max: '>4',
-		ranges: '<3,3-3.3,3.3-3.6,3.6-4,>4',
-		label: '# Sick Days',
-		tooltip: 'Average number of physically unhealthy days reported in past 30 days (age-adjusted).'
-	},
-	hh_diabetes_rate: {
-		column: 'diabetes_pct',
-		style: 'health_sec_diabetes',
-		unit: 'perc',
-		min: '<8',
-		max: '>12',
-		ranges: '<8,8-9,9-10.5,10.5-12,>12',
-		label: '% Diabetes',
-		tooltip: 'Percentage of adults with diabetes.'
-	},
-	hh_severe_housing: {
-		column: 'severe_housing_problems',
-		style: 'health_sec_sevhousing',
-		unit: 'perc',
-		min: '<12.5',
-		max: '>20',
-		ranges: '<12.5,12.5-15,15-17.5,17.5-20,>20',
-		label: '% Severe Housing',
-		tooltip: 'Percentage of households with at least 1 of 4 housing problems: overcrowding, high housing costs, or lack of kitchen or plumbing facilities.'
-	}
-}
+    hh_diabetes_rate: {
+        column: 'diabetes_pct',
+        style: 'health_sec_diabetes',
+        ranges: '≤8.7, 8.8 - 10.7, 10.8 - 12.6, 12.7 - 15.4, >15.4',
+        label: '% Diabetes',
+        tooltip: 'in_diabetes_rate'
+    },
+    hh_obesity: {
+        column: 'adult_obesity_pct',
+        style: 'health_sec_obesity',
+        ranges: '≤28.3, 28.4 - 31.7, 31.8 - 34.4, 34.5 - 37.3, >37.3',
+        label: '% Obesity',
+        tooltip: 'in_obs_rate'
+    },
+    hh_pcppc: {
+        column: 'pcp_rate_per_100000',
+        style: 'health_sec_pcpacc',
+        ranges: '>76.1, 76.1 - 54, 54 - 39.8, 39.8 - 24.2, ≤24.2',
+        label: 'PCP/100,000',
+        tooltip: 'in_pcp_access'
+    },
+    hh_poorfair: {
+        column: 'poor_fair_health_pct',
+        style: 'health_sec_poorfair',
+        ranges: '≤13.7, 13.8 - 16.0, 16.1 - 18.6, 18.7 - 21.8, >21.8',
+        label: '% Poor/Fair Health',
+        tooltip: 'in_poorfair'
+    },
+    hh_preventhosp: {
+        column: 'preventable_hospital_stays_per_100000',
+        style: 'health_sec_preventhosp',
+        ranges: '≤3391, 3392 - 4284, 4285 - 5118, 5119 - 6139, >6139',
+        label: '# Hospital Stays',
+        tooltip: 'in_prv_hosp'
+    },
+    hh_sick_days: {
+        column: 'poor_physical_health_days_within_last_30_days',
+        style: 'health_sec_sickdays',
+        ranges: '≤3.4, 3.4 - 3.8, 3.8 - 4.1, 4.1 - 4.6, >4.6',
+        label: '# Sick Days',
+        tooltip: 'in_sick_days'
+    },
+};
 
+// Health > Opioids > Opioid measures choropleth
+var opioid_ly = {
+    in_alldrugs_age_adj_mortality_rate: {
+        column: 'alldrugs_age_adj_mortality_rate',
+        style: 'opioid_alldrugs_mortality',
+        ranges: '≤13.1, 13.2 - 17.8, 17.9 - 22.6, 22.7 - 30.2, >30.2'
+    },
+    in_alldrugs_age_adj_mortality_rate_pct_change: {
+        column: 'alldrugs_age_adj_mortality_rate_pct_change',
+        style: 'opioid_alldrugs_pct_chg',
+        ranges: '≤-2.5, -2.4 - 18.6, 18.7 - 45.5, 45.6 - 88, >88'
+    },
+    in_anyopioids_age_adj_mortality_rate: {
+        column: 'anyopioids_age_adj_mortality_rate',
+        style: 'opioid_anyopioids_mortality',
+        ranges: '≤8.1, 8.2 - 12.3, 12.4 - 17, 17.1 - 23.8, >23.8'
+    },
+    in_anyopioids_age_adj_mortality_rate_pct_change: {
+        column: 'anyopioids_age_adj_mortality_rate_pct_change',
+        style: 'opioid_anyopioids_pct_chg',
+        ranges: '≤0, 0.1 - 33.6, 33.7 - 80.9, 81 - 148, >148'
+    },
+    in_syntheticopioids_age_adj_mortality_rate: {
+        column: 'syntheticopioids_age_adj_mortality_rate',
+        style: 'opioid_syntheticopioids_mortality',
+        ranges: '≤4.1, 4.2 - 7.1, 7.2 - 10.8, 10.9 - 16.9, >16.9'
+    },
+    in_syntheticopioids_age_adj_mortality_rate_pct_change: {
+        column: 'syntheticopioids_age_adj_mortality_rate_pct_change',
+        style: 'opioid_syntheticopioids_pct_chg',
+        ranges: '≤71.4, 71.5 - 350, 350.1 - 675, 675.1 - 1200, >1200'
+    },
+    in_prescriptionopioids_age_adj_mortality_rate: {
+        column: 'prescriptionopioids_age_adj_mortality_rate',
+        style: 'opioid_prescriptionopioids_mortality',
+        ranges: '≤3.8, 3.9 - 5.5, 5.6 - 7.6, 7.7 - 11.1, >11.1'
+    },
+    in_prescriptionopioids_age_adj_mortality_rate_pct_change: {
+        column: 'prescriptionopioids_age_adj_mortality_rate_pct_change',
+        style: 'opioid_prescriptionopioids_pct_chg',
+        ranges: '≤-26.3, 26.2- -4.5, -4.4 - 15.9, 16 - 44.1, 44.1'
+    },
+    in_heroin_age_adj_mortality_rate: {
+        column: 'heroin_age_adj_mortality_rate',
+        style: 'opioid_heroin_mortality',
+        ranges: '≤3.2, 3.3 - 5.1, 5.2 - 7.5, 7.6 - 11, >11'
+    },
+    in_heroin_age_adj_mortality_rate_pct_change: {
+        column: 'heroin_age_adj_mortality_rate_pct_change',
+        style: 'opioid_heroin_pct_chg',
+        ranges: '≤50.3, 50.4 - 121.2, 121.3 - 175, 175.1 - 258.3, >258.3'
+    },
+    in_opioid_prescribing_rate: {
+        column: 'opioid_prescribing_rate',
+        style: 'opioid_prescribing_rate',
+        ranges: '≤36.5, 36.6 - 51.2, 51.3 - 66.3, 66.4 - 84.9, >84.9'
+    },
+    in_opioid_prescribing_rate_pct_change: {
+        column: 'opioid_prescribing_rate_pct_change',
+        style: 'opioid_prescribing_rate_pct_chg',
+        ranges: '≤-16.8, -16.7 - -13.4, -13.3 - -10.8, -10.7 - -7.3, >-7.3'
+    }
+};
+
+// Broadband tab > Fixed broadband availability tooltips
 var broadband_ly = {
-	wn_dl: {
-		tooltip: 'Percent of population with access to fixed broadband service at 25 mbps or higher advertised download speeds.'
-	},	
-	wn_ul: {
-		tooltip: 'Percent of population with access to fixed broadband service at 3 mbps or higher advertised upload speeds.'
-	},
-	ws_dl: {
-		tooltip: 'Percent of population with access to 25 mbps advertised wireless download speeds.'
-	},	
-	ws_ul: {
-		tooltip: 'Percent of population with access to 3 mbps advertised wireless upload speeds.'
-	},	
-	in_adoption: {
-		tooltip: 'Percent of households with fixed connections over 200 kbps.'
-	},	
-	fixed_access: {
-		tooltip: 'Percent of population with access to fixed broadband service at 25/3 mbps or higher advertised speeds.'
-	}
+    fixed_access: {
+        tooltip: 'Percent of population with access to fixed broadband service at 25/3 mbps or higher advertised speeds, 2018.'
+    },
+    wn_dl: {
+        tooltip: 'Percent of population with access to fixed broadband service at 25 mbps or higher advertised download speeds, 2018.'
+    },
+    wn_ul: {
+        tooltip: 'Percent of population with access to fixed broadband service at 3 mbps or higher advertised upload speeds, 2018.'
+    },
+    in_adoption: {
+        tooltip: 'Subscribership ratio: number of fixed connections over 200kbps per 100 households, 2018.'
+    }
 };
 
+// Demographics tab choropleth
 var pop_ly = {
-	pop_density: {
-		column: 'pop_density',
-		style: 'pop_density',
-		unit: 'pml',
-		min: '<25',
-		max: '>250',
-		ranges: '<25,25-50,50-100,100-250,>250',
-		zindex: 90,
-		label: 'Population per sq. mile',
-		tooltip: 'Population density per square mile.'
-	},
-	pop_urbanrural: {
-		column: 'rural_pct',
-		style: 'pop_urbanrural',
-		unit: 'perc',
-		min: '<10',
-		max: '>50',
-		ranges: '<10,10-20,20-35,35-50,>50',
-		zindex: 90,
-		label: '% Rural',
-		tooltip: 'Percentage of population living in a rural area.'
-	},
-	pop_age: {
-		column: 'age_over_65_pct',
-		style: 'pop_age',
-		unit: 'perc',
-		min: '<12',
-		max: '>16',
-		ranges: '<12,12-13.5,13.5-14.5,14.5-16,>16',
-		zindex: 90,
-		label: '% Over 65',
-		tooltip: 'Percentage of population ages 65 and older.'
-	},
-	pop_unemploy: {
-		column: 'unemployment',
-		style: 'pop_unemploy',
-		unit: 'perc',
-		min: '<5',
-		max: '>8',
-		ranges: '<5,5-6,6-7,7-8,>8',
-		zindex: 90,
-		label: '% Unemployed',
-		tooltip: 'Percentage of population ages 16 and older unemployed but seeking work.'
-	},
-	pop_edu: {
-		column: 'some_college',
-		style: 'pop_edu',
-		unit: 'perc',
-		min: '<60',
-		max: '>70',
-		ranges: '<60,60-63,63-66,66-70,>70',
-		zindex: 90,
-		label: '% Some College',
-		tooltip: 'Percentage of adults ages 25-44 with some post-secondary education.'
-	}
-}
-																		
-var in_units = {
-	perc: {
-		name: 'Percent',
-		desc: '%'
-	},
-	p1: {
-		name: 'Per Person',
-		desc: 'Per Capita'
-	},
-	p1000: {
-		name: 'Per 1,000 People',
-		desc: 'Per 1,000 People'
-	},
-	p100000: {
-		name: 'Per 100,000 People',
-		desc: 'Per 100,000 People'
-	},
-	y100000: {
-		name: 'Years Lost Per 100,000 People',
-		desc: 'Years'
-	},
-	st: {
-		name: 'Speed Tiers',
-		desc: 'Speed Tiers'
-	}
-};
-																
-var states_in = {
-	FL: {
-		lat: 28.5953035358968,
-		lng: -82.4958094312413,
-		zoom: 7
-	},	
-	MI: {
-		lat: 44.3715397944714,
-		lng: -85.4376684832842,
-		zoom: 7
-	}, 
-	MS: {
-		lat: 32.7509547380987,
-		lng: -89.6621633573408,
-		zoom: 7
-	}, 
-	OH: {
-		lat: 40.1903624,
-		lng: -82.6692525,
-		zoom: 7
-	},
-	VA: {
-		lat: 37.5126006451781,
-		lng: -78.7878086547533,
-		zoom: 7
-	}	
+    pop_urbanrural: {
+        column: 'rural_pct',
+        style: 'pop_urbanrural',
+        ranges: '≤10,10 - 20,20 - 35,35 - 50,>50',
+        label: '% Rural',
+        tooltip: 'Percentage of population living in a rural area.'
+    },
+    pop_density: {
+        column: 'pop_density',
+        style: 'pop_density',
+        ranges: '≤25,25 - 50,50 - 100,100 - 250,>250',
+        label: 'Population per sq. mile',
+        tooltip: 'Population density per square mile.'
+    },
+    pop_age: {
+        column: 'age_over_65_pct',
+        style: 'pop_age',
+        ranges: '≤15.6,15.7 - 17.9,18 - 19.9,20 - 22.6,>22.6',
+        label: '% Over 65',
+        tooltip: 'Percentage of population aged 65 and older.'
+    },
+    pop_unemploy: {
+        column: 'unemployment',
+        style: 'pop_unemploy',
+        ranges: '≤3,3.1 - 3.6,3.7 - 4.2,4.3 - 5.1,>5.1',
+        label: '% Unemployed',
+        tooltip: 'Percentage of civilian population ages 16 and older unemployed but seeking work.'
+    },
+    pop_edu: {
+        column: 'some_college',
+        style: 'pop_edu',
+        ranges: '≤47.8,47.9 - 54.6,54.7 - 61.2,61.3 - 68.3,>68.3',
+        label: '% Some College',
+        tooltip: 'Percentage of adults ages 25-44 with some post-secondary education.'
+    }
 };
 
+// Broadband speed tiers
 var bb_speed_tiers = {
-	1: {
-		range: '1 - 3',
-		min: '1',
-		max: '3'
-	},
-	2: {
-		range: '3 - 4',
-		min: '3',
-		max: '4'
-	},
-	3:{
-		range: '4 - 6',
-		min: '4',
-		max: '6'
-	},
-	4: {
-		range: '6 - 10',
-		min: '6',
-		max: '10'
-	},
-	5: {
-		range: '10 - 15',
-		min: '10',
-		max: '15'
-	},
-	6: {
-		range: '15 - 25',
-		min: '15',
-		max: '25'
-	},
-	7: {
-		range: '25 - 50',
-		min: '25',
-		max: '50'
-	},
-	8: {
-		range: '50 - 100',
-		min: '50',
-		max: '100'
-	},
-	9: {
-		range: '100 - 1,000',
-		min: '100',
-		max: '1,000'
-	},
-	10: {
-		range: '> 1,000',
-		min: '> 1,000',
-		max: '> 1,000'
-	}
+    0: {
+        range: '0',
+        min: '0',
+        max: '0'
+    },
+    1: {
+        range: '0 - 1',
+        min: '0',
+        max: '1'
+    },
+    2: {
+        range: '1 - 3',
+        min: '1',
+        max: '3'
+    },
+    3: {
+        range: '3 - 4',
+        min: '3',
+        max: '4'
+    },
+    4: {
+        range: '4 - 6',
+        min: '4',
+        max: '6'
+    },
+    5: {
+        range: '6 - 10',
+        min: '6',
+        max: '10'
+    },
+    6: {
+        range: '10 - 15',
+        min: '10',
+        max: '15'
+    },
+    7: {
+        range: '15 - 25',
+        min: '15',
+        max: '25'
+    },
+    8: {
+        range: '25 - 50',
+        min: '25',
+        max: '50'
+    },
+    9: {
+        range: '50 - 100',
+        min: '50',
+        max: '100'
+    },
+    10: {
+        range: '100 - 1,000',
+        min: '100',
+        max: '1,000'
+    },
+    11: {
+        range: '> 1,000',
+        min: '> 1,000',
+        max: '> 1,000'
+    }
 };
-var bb_adoption_tiers = {
-	1: {
-		range: '0 - 20'
-	},
-	2: {
-		range: '20 - 40'
-	},
-	3: {
-		range: '40 - 60'
-	},
-	4: {
-		range: '60 - 80'
-	},
-	5: {
-		range: '80 - 100'
-	}
-}	

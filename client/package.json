@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "contributors": [
     {
-      "name": "Ravi",
-      "email": "onlykanth@gmail.com"
+      "name": "Alex McLaughlin",
+      "email": "amclaughlin@mitre.org"
     }
   ],
   "license": "UNLICENSED",
@@ -15,7 +15,6 @@
     "@popperjs/core": "^2.11.7",
     "bootstrap": "^5.2.3",
     "bootstrap5-toggle": "^5.0.4",
-    "build": "^0.1.4",
     "mapbox-gl": "^2.13.0",
     "nouislider": "^15.7.0",
     "plotly.js-dist": "^2.20.0"

@@ -1,0 +1,23 @@
+{
+	"cutoffs": [1, 1],
+	"data": [
+		{
+			"ACS_PCT_ASSOCIATE_DGR": 28.3,
+			"ACS_PCT_NONWHITE": 23.1,
+			"ACS_PCT_PRIVATE_ANY": 59.9,
+			"age_over_65_pct": 15.6,
+			"broadband": 80.8,
+			"county_categorization": 1,
+			"fips": 48229,
+			"health": "0",
+			"population": 55601
+		}
+	],
+	"filter_mappings": {
+		"health_insurance": "ACS_PCT_PRIVATE_ANY",
+		"non_white": "ACS_PCT_NONWHITE",
+		"over_65": "age_over_65_pct",
+		"population": "population",
+		"some_college": "ACS_PCT_ASSOCIATE_DGR"
+	}
+}
