@@ -168,7 +168,7 @@ class navbar extends HTMLElement {
                     <b>
                       <a
                         class="nav-link" 
-                        href="/"
+                        href="index"
                       >
                         Health
                       </a>
@@ -176,7 +176,7 @@ class navbar extends HTMLElement {
                     <hr style="width: 50%">
                     <b><a
                       class="nav-link"
-                      href="/maternal-health-map"
+                      href="maternal-health-map"
                     >Maternal Health</a></b>
                     <hr style="width: 50%">
                   </div>
